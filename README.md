@@ -1,1 +1,2 @@
-# My First Git Pproject
+# My First Git Project
+Prof: Randi Haboc
