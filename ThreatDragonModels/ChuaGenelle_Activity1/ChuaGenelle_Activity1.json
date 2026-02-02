@@ -1158,40 +1158,6 @@
             "connector": "smooth",
             "data": {
               "type": "tm.Boundary",
-              "name": "Internal/ Data Services",
-              "description": "",
-              "isTrustBoundary": true,
-              "hasOpenThreats": false,
-              "crossingFlows": [],
-              "containedElements": []
-            },
-            "labels": [
-              "Internal/ Data Services"
-            ],
-            "id": "672cbb9b-235d-4f70-926e-8d266e16f23c",
-            "source": {
-              "x": 780,
-              "y": 20
-            },
-            "target": {
-              "x": 790,
-              "y": 410
-            },
-            "vertices": [
-              {
-                "x": 720,
-                "y": 190
-              }
-            ]
-          },
-          {
-            "shape": "trust-boundary-curve",
-            "width": 200,
-            "height": 100,
-            "zIndex": 10,
-            "connector": "smooth",
-            "data": {
-              "type": "tm.Boundary",
               "name": "External/ Internal",
               "description": "",
               "isTrustBoundary": true,
@@ -1213,7 +1179,41 @@
             },
             "vertices": [
               {
-                "x": 360,
+                "x": 400,
+                "y": 170
+              }
+            ]
+          },
+          {
+            "shape": "trust-boundary-curve",
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Boundary",
+              "name": "Internal/ Data Services",
+              "description": "",
+              "isTrustBoundary": true,
+              "hasOpenThreats": false,
+              "crossingFlows": [],
+              "containedElements": []
+            },
+            "labels": [
+              "Internal/ Data Services"
+            ],
+            "id": "672cbb9b-235d-4f70-926e-8d266e16f23c",
+            "source": {
+              "x": 840,
+              "y": 20
+            },
+            "target": {
+              "x": 850,
+              "y": 410
+            },
+            "vertices": [
+              {
+                "x": 780,
                 "y": 170
               }
             ]
