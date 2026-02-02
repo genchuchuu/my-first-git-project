@@ -140,8 +140,8 @@
           },
           {
             "position": {
-              "x": 550,
-              "y": 40
+              "x": 540,
+              "y": 30
             },
             "size": {
               "width": 60,
@@ -260,7 +260,7 @@
           },
           {
             "position": {
-              "x": 550,
+              "x": 540,
               "y": 280
             },
             "size": {
@@ -627,46 +627,50 @@
             }
           },
           {
-            "shape": "trust-boundary-curve",
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
             "width": 200,
             "height": 100,
             "zIndex": 10,
             "connector": "smooth",
             "data": {
-              "type": "tm.Boundary",
-              "name": "External/Internal",
+              "type": "tm.Flow",
+              "name": "Data Flow",
               "description": "",
-              "isTrustBoundary": true,
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
               "hasOpenThreats": false,
-              "crossingFlows": [],
-              "containedElements": []
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [],
+              "trustBoundaryIds": []
             },
             "labels": [
-              "External/Internal"
+              "Data Flow"
             ],
-            "id": "ed6dec5b-453c-469a-8102-c4ceb1a9c3a0",
+            "id": "30ce5aaa-621f-47f5-b6ba-0a9e1132c7e9",
             "source": {
-              "x": 440,
-              "y": 20
+              "x": 170,
+              "y": 290
             },
             "target": {
-              "x": 440,
-              "y": 590
-            },
-            "vertices": [
-              {
-                "x": 480,
-                "y": 130
-              },
-              {
-                "x": 500,
-                "y": 200
-              },
-              {
-                "x": 500,
-                "y": 290
-              }
-            ]
+              "x": 420,
+              "y": 340
+            }
           }
         ]
       }
