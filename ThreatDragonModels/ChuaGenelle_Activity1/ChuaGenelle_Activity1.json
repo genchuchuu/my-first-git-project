@@ -1,7 +1,7 @@
 {
   "version": "2.5.0",
   "summary": {
-    "title": "ChuaGenelle_Activity1",
+    "title": "ChuaGenelle_Activity2",
     "owner": "Chua, Genelle",
     "description": "This threat model shows a web application where users log in, send feedback, and save data in a database. The system checks user access through an authorization provider and an LDAP directory. The diagram shows the main parts of the system, how data moves between them, and where trust boundaries are placed.",
     "id": 0
