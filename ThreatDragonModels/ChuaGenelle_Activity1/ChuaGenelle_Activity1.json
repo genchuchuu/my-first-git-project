@@ -1177,12 +1177,6 @@
               "x": 860,
               "y": 410
             },
-            "vertices": [
-              {
-                "x": 770,
-                "y": 160
-              }
-            ],
             "tools": {
               "items": [
                 "boundary",
@@ -1257,7 +1251,13 @@
                 "target-arrowhead"
               ],
               "name": null
-            }
+            },
+            "vertices": [
+              {
+                "x": 770,
+                "y": 160
+              }
+            ]
           },
           {
             "shape": "trust-boundary-curve",
@@ -1286,12 +1286,6 @@
               "x": 490,
               "y": 410
             },
-            "vertices": [
-              {
-                "x": 390,
-                "y": 170
-              }
-            ],
             "tools": {
               "items": [
                 "boundary",
@@ -1376,7 +1370,13 @@
                 "target-arrowhead"
               ],
               "name": null
-            }
+            },
+            "vertices": [
+              {
+                "x": 390,
+                "y": 170
+              }
+            ]
           }
         ]
       }
