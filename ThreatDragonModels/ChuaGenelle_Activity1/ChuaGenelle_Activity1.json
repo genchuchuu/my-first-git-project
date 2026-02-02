@@ -673,7 +673,7 @@
             },
             "vertices": [
               {
-                "x": 620,
+                "x": 630,
                 "y": 180
               }
             ]
@@ -725,40 +725,10 @@
             },
             "vertices": [
               {
-                "x": 550,
+                "x": 540,
                 "y": 180
               }
-            ],
-            "tools": {
-              "items": [
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead"
-              ],
-              "name": null
-            }
+            ]
           },
           {
             "shape": "flow",
@@ -807,8 +777,8 @@
             },
             "vertices": [
               {
-                "x": 760,
-                "y": 50
+                "x": 790,
+                "y": 30
               }
             ]
           },
@@ -860,7 +830,7 @@
             "vertices": [
               {
                 "x": 790,
-                "y": 90
+                "y": 110
               }
             ]
           },
@@ -912,7 +882,7 @@
             "vertices": [
               {
                 "x": 790,
-                "y": 290
+                "y": 270
               }
             ]
           },
@@ -1020,7 +990,7 @@
             "vertices": [
               {
                 "x": 800,
-                "y": 340
+                "y": 360
               }
             ]
           },
@@ -1071,7 +1041,7 @@
             },
             "vertices": [
               {
-                "x": 360,
+                "x": 350,
                 "y": 280
               }
             ]
