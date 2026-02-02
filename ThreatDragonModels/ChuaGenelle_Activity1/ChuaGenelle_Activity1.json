@@ -1248,65 +1248,6 @@
                 "button-remove",
                 "vertices",
                 "source-arrowhead",
-                "target-arrowhead"
-              ],
-              "name": null
-            },
-            "vertices": [
-              {
-                "x": 770,
-                "y": 160
-              }
-            ]
-          },
-          {
-            "shape": "trust-boundary-curve",
-            "width": 200,
-            "height": 100,
-            "zIndex": 10,
-            "connector": "smooth",
-            "data": {
-              "type": "tm.Boundary",
-              "name": "External/ Internal",
-              "description": "",
-              "isTrustBoundary": true,
-              "hasOpenThreats": false,
-              "crossingFlows": [],
-              "containedElements": []
-            },
-            "labels": [
-              "External/ Internal"
-            ],
-            "id": "a30dc136-8099-4246-9e13-03432bd64046",
-            "source": {
-              "x": 480,
-              "y": 10
-            },
-            "target": {
-              "x": 490,
-              "y": 410
-            },
-            "tools": {
-              "items": [
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
                 "target-arrowhead",
                 "boundary",
                 "button-remove",
@@ -1370,6 +1311,40 @@
                 "target-arrowhead"
               ],
               "name": null
+            },
+            "vertices": [
+              {
+                "x": 770,
+                "y": 160
+              }
+            ]
+          },
+          {
+            "shape": "trust-boundary-curve",
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Boundary",
+              "name": "External/ Internal",
+              "description": "",
+              "isTrustBoundary": true,
+              "hasOpenThreats": false,
+              "crossingFlows": [],
+              "containedElements": []
+            },
+            "labels": [
+              "External/ Internal"
+            ],
+            "id": "a30dc136-8099-4246-9e13-03432bd64046",
+            "source": {
+              "x": 480,
+              "y": 10
+            },
+            "target": {
+              "x": 490,
+              "y": 410
             },
             "vertices": [
               {
