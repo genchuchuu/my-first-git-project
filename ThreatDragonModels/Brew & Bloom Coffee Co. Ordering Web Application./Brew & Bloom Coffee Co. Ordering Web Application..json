@@ -535,6 +535,7 @@
             },
             "visible": true,
             "shape": "actor",
+            "zIndex": 1,
             "ports": {
               "groups": {
                 "top": {
@@ -618,7 +619,6 @@
               ]
             },
             "id": "ddbcae1c-3d39-47ce-b456-fb51668aecbe",
-            "zIndex": 1,
             "data": {
               "type": "tm.Actor",
               "name": "Manager",
@@ -652,6 +652,7 @@
             },
             "visible": true,
             "shape": "process",
+            "zIndex": 2,
             "ports": {
               "groups": {
                 "top": {
@@ -735,7 +736,6 @@
               ]
             },
             "id": "12320c2c-75da-480a-b44a-22fb8136344a",
-            "zIndex": 2,
             "data": {
               "type": "tm.Process",
               "name": "Backend \nWeb App",
@@ -772,6 +772,7 @@
             },
             "visible": true,
             "shape": "actor",
+            "zIndex": 3,
             "ports": {
               "groups": {
                 "top": {
@@ -855,7 +856,6 @@
               ]
             },
             "id": "f6b827d7-5b42-443f-9847-b9bfaffee340",
-            "zIndex": 3,
             "data": {
               "type": "tm.Actor",
               "name": "Third Party \nPayment Service",
@@ -871,7 +871,7 @@
           {
             "position": {
               "x": 385,
-              "y": 374
+              "y": 424
             },
             "size": {
               "width": 120,
@@ -892,6 +892,7 @@
             },
             "visible": true,
             "shape": "store",
+            "zIndex": 4,
             "ports": {
               "groups": {
                 "top": {
@@ -975,7 +976,6 @@
               ]
             },
             "id": "75d2c303-be84-448f-b213-9bf0b14bd007",
-            "zIndex": 4,
             "data": {
               "type": "tm.Store",
               "name": "MongoDB",
@@ -1000,7 +1000,7 @@
             "connector": "smooth",
             "data": {
               "type": "tm.Boundary",
-              "name": "Trust Boundary",
+              "name": "Client/ Server\nBoundary",
               "description": "",
               "isTrustBoundary": true,
               "hasOpenThreats": false,
@@ -1008,41 +1008,7 @@
               "containedElements": []
             },
             "labels": [
-              "Trust Boundary"
-            ],
-            "id": "6ac73b2f-55ec-4e99-b4e8-ef4a3a19b161",
-            "source": {
-              "x": 600,
-              "y": 70
-            },
-            "target": {
-              "x": 620,
-              "y": 460
-            },
-            "vertices": [
-              {
-                "x": 580,
-                "y": 260
-              }
-            ]
-          },
-          {
-            "shape": "trust-boundary-curve",
-            "width": 200,
-            "height": 100,
-            "zIndex": 10,
-            "connector": "smooth",
-            "data": {
-              "type": "tm.Boundary",
-              "name": "Trust Boundary",
-              "description": "",
-              "isTrustBoundary": true,
-              "hasOpenThreats": false,
-              "crossingFlows": [],
-              "containedElements": []
-            },
-            "labels": [
-              "Trust Boundary"
+              "Client/ Server\nBoundary"
             ],
             "id": "638d4b02-4763-4c12-88d1-eae631ca5f7e",
             "source": {
@@ -1051,7 +1017,7 @@
             },
             "target": {
               "x": 320,
-              "y": 460
+              "y": 510
             },
             "vertices": [
               {
@@ -1068,7 +1034,7 @@
             "connector": "smooth",
             "data": {
               "type": "tm.Boundary",
-              "name": "Trust Boundary",
+              "name": "Server/ Payment\nBoundary",
               "description": "",
               "isTrustBoundary": true,
               "hasOpenThreats": false,
@@ -1076,21 +1042,21 @@
               "containedElements": []
             },
             "labels": [
-              "Trust Boundary"
+              "Server/ Payment\nBoundary"
             ],
-            "id": "7284eb64-716f-44ae-86db-23c5ef864b2b",
+            "id": "6ac73b2f-55ec-4e99-b4e8-ef4a3a19b161",
             "source": {
-              "x": 120,
-              "y": 400
+              "x": 600,
+              "y": 70
             },
             "target": {
-              "x": 220,
-              "y": 500
+              "x": 620,
+              "y": 510
             },
             "vertices": [
               {
-                "x": 220,
-                "y": 340
+                "x": 580,
+                "y": 260
               }
             ]
           },
@@ -1110,13 +1076,47 @@
             },
             "visible": true,
             "shape": "td-text-block",
-            "id": "da53dba3-2efe-4b25-a5b2-53aac4d09472",
             "zIndex": 13,
+            "id": "da53dba3-2efe-4b25-a5b2-53aac4d09472",
             "data": {
               "type": "tm.Text",
               "name": "Third Party Boundary",
               "hasOpenThreats": false
             }
+          },
+          {
+            "shape": "trust-boundary-curve",
+            "width": 200,
+            "height": 100,
+            "zIndex": 14,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Boundary",
+              "name": "Trust Boundary",
+              "description": "",
+              "isTrustBoundary": true,
+              "hasOpenThreats": false,
+              "crossingFlows": [],
+              "containedElements": []
+            },
+            "labels": [
+              "Trust Boundary"
+            ],
+            "id": "7284eb64-716f-44ae-86db-23c5ef864b2b",
+            "source": {
+              "x": 40,
+              "y": 390
+            },
+            "target": {
+              "x": 800,
+              "y": 360
+            },
+            "vertices": [
+              {
+                "x": 430,
+                "y": 330
+              }
+            ]
           }
         ]
       },
