@@ -515,6 +515,9 @@
               "height": 60
             },
             "attrs": {
+              "text": {
+                "text": "Barista"
+              },
               "body": {
                 "stroke": "#333333",
                 "strokeWidth": 1.5,
@@ -523,6 +526,7 @@
             },
             "visible": true,
             "shape": "actor",
+            "zIndex": 1,
             "ports": {
               "groups": {
                 "top": {
@@ -606,17 +610,23 @@
               ]
             },
             "id": "0656ac5c-7e57-4b07-8e73-aa9cda58631b",
-            "zIndex": 1,
             "data": {
               "type": "tm.Actor",
-              "name": "Actor",
-              "description": "",
+              "name": "Barista",
+              "description": "User interface built with HTML5/JS (React/Vue/Angular) for customers and staff.",
               "isTrustBoundary": false,
               "outOfScope": false,
               "reasonOutOfScope": "",
               "hasOpenThreats": false,
               "providesAuthentication": false,
               "threats": []
+            },
+            "tools": {
+              "items": [
+                "boundary",
+                "button-remove"
+              ],
+              "name": null
             }
           },
           {
@@ -629,6 +639,9 @@
               "height": 60
             },
             "attrs": {
+              "text": {
+                "text": "Backend \nWeb App"
+              },
               "body": {
                 "stroke": "#333333",
                 "strokeWidth": 1.5,
@@ -637,6 +650,7 @@
             },
             "visible": true,
             "shape": "process",
+            "zIndex": 2,
             "ports": {
               "groups": {
                 "top": {
@@ -720,19 +734,18 @@
               ]
             },
             "id": "7fcfc36b-a098-4af1-876b-d4482f7d6309",
-            "zIndex": 2,
             "data": {
               "type": "tm.Process",
-              "name": "Process",
-              "description": "",
+              "name": "Backend \nWeb App",
+              "description": "Node.js server implementing RESTful APIs; handles authentication, order processing, and business logic.",
               "outOfScope": false,
               "isTrustBoundary": false,
               "reasonOutOfScope": "",
               "hasOpenThreats": false,
               "handlesCardPayment": false,
               "handlesGoodsOrServices": false,
-              "isWebApplication": false,
-              "privilegeLevel": "",
+              "isWebApplication": true,
+              "privilegeLevel": "High",
               "threats": []
             }
           },
@@ -746,14 +759,18 @@
               "height": 60
             },
             "attrs": {
+              "text": {
+                "text": "Third Party \nPayment Service"
+              },
               "body": {
                 "stroke": "#333333",
                 "strokeWidth": 1.5,
-                "strokeDasharray": null
+                "strokeDasharray": "4 3"
               }
             },
             "visible": true,
             "shape": "actor",
+            "zIndex": 3,
             "ports": {
               "groups": {
                 "top": {
@@ -837,14 +854,13 @@
               ]
             },
             "id": "073a5d05-f1b2-464d-8973-73839f04dc4f",
-            "zIndex": 3,
             "data": {
               "type": "tm.Actor",
-              "name": "Actor",
-              "description": "",
+              "name": "Third Party \nPayment Service",
+              "description": "External gateway handling credit/debit, e-wallets, and bank transfers.",
               "isTrustBoundary": false,
-              "outOfScope": false,
-              "reasonOutOfScope": "",
+              "outOfScope": true,
+              "reasonOutOfScope": "Externally managed service; only the integration point is in scope for this model.",
               "hasOpenThreats": false,
               "providesAuthentication": false,
               "threats": []
@@ -860,6 +876,9 @@
               "height": 60
             },
             "attrs": {
+              "text": {
+                "text": "MongoDB"
+              },
               "topLine": {
                 "strokeWidth": 1.5,
                 "strokeDasharray": null
@@ -871,6 +890,7 @@
             },
             "visible": true,
             "shape": "store",
+            "zIndex": 4,
             "ports": {
               "groups": {
                 "top": {
@@ -954,20 +974,19 @@
               ]
             },
             "id": "769c6be9-9afd-4911-989c-dfa9b6e18801",
-            "zIndex": 4,
             "data": {
               "type": "tm.Store",
-              "name": "Store",
-              "description": "",
+              "name": "MongoDB",
+              "description": "Persistent data store for user profiles, menu items, order records, and staff roles.",
               "outOfScope": false,
               "isTrustBoundary": false,
               "reasonOutOfScope": "",
               "hasOpenThreats": false,
-              "isALog": false,
-              "isEncrypted": false,
+              "isALog": true,
+              "isEncrypted": true,
               "isSigned": false,
-              "storesCredentials": false,
-              "storesInventory": false,
+              "storesCredentials": true,
+              "storesInventory": true,
               "threats": []
             }
           },
@@ -991,16 +1010,50 @@
             ],
             "id": "63a7090f-0963-4636-b77e-e328a9c77fed",
             "source": {
-              "x": 330,
-              "y": 50
+              "x": 340,
+              "y": 60
             },
             "target": {
-              "x": 330,
+              "x": 350,
               "y": 370
             },
             "vertices": [
               {
-                "x": 310,
+                "x": 320,
+                "y": 210
+              }
+            ]
+          },
+          {
+            "shape": "trust-boundary-curve",
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Boundary",
+              "name": "Trust Boundary",
+              "description": "",
+              "isTrustBoundary": true,
+              "hasOpenThreats": false,
+              "crossingFlows": [],
+              "containedElements": []
+            },
+            "labels": [
+              "Trust Boundary"
+            ],
+            "id": "179f486d-3b25-4ca4-a231-f0c4312750cf",
+            "source": {
+              "x": 570,
+              "y": 60
+            },
+            "target": {
+              "x": 580,
+              "y": 370
+            },
+            "vertices": [
+              {
+                "x": 550,
                 "y": 210
               }
             ]
