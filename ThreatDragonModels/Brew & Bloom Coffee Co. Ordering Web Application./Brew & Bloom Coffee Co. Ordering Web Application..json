@@ -533,6 +533,9 @@
               "height": 60
             },
             "attrs": {
+              "text": {
+                "text": "MongoDB"
+              },
               "topLine": {
                 "strokeWidth": 1.5,
                 "strokeDasharray": null
@@ -544,6 +547,7 @@
             },
             "visible": true,
             "shape": "store",
+            "zIndex": 1,
             "ports": {
               "groups": {
                 "top": {
@@ -627,20 +631,19 @@
               ]
             },
             "id": "5c00d1d7-8440-47f3-ba3b-301c68be179d",
-            "zIndex": 1,
             "data": {
               "type": "tm.Store",
-              "name": "Store",
-              "description": "",
+              "name": "MongoDB",
+              "description": "Persistent data store for user profiles, menu items, order records, and staff roles.",
               "outOfScope": false,
               "isTrustBoundary": false,
               "reasonOutOfScope": "",
               "hasOpenThreats": false,
-              "isALog": false,
-              "isEncrypted": false,
+              "isALog": true,
+              "isEncrypted": true,
               "isSigned": false,
-              "storesCredentials": false,
-              "storesInventory": false,
+              "storesCredentials": true,
+              "storesInventory": true,
               "threats": []
             }
           },
@@ -654,6 +657,9 @@
               "height": 60
             },
             "attrs": {
+              "text": {
+                "text": "Backend \nWeb App"
+              },
               "body": {
                 "stroke": "#333333",
                 "strokeWidth": 1.5,
@@ -662,6 +668,7 @@
             },
             "visible": true,
             "shape": "process",
+            "zIndex": 2,
             "ports": {
               "groups": {
                 "top": {
@@ -745,19 +752,18 @@
               ]
             },
             "id": "b74be3b7-0dbd-421b-b0ba-be1d1204a681",
-            "zIndex": 2,
             "data": {
               "type": "tm.Process",
-              "name": "Process",
-              "description": "",
+              "name": "Backend \nWeb App",
+              "description": "Node.js server implementing RESTful APIs; handles authentication, order processing, and business logic.",
               "outOfScope": false,
               "isTrustBoundary": false,
               "reasonOutOfScope": "",
               "hasOpenThreats": false,
               "handlesCardPayment": false,
               "handlesGoodsOrServices": false,
-              "isWebApplication": false,
-              "privilegeLevel": "",
+              "isWebApplication": true,
+              "privilegeLevel": "High",
               "threats": []
             }
           },
@@ -771,6 +777,9 @@
               "height": 60
             },
             "attrs": {
+              "text": {
+                "text": "Administrator"
+              },
               "body": {
                 "stroke": "#333333",
                 "strokeWidth": 1.5,
@@ -779,6 +788,7 @@
             },
             "visible": true,
             "shape": "actor",
+            "zIndex": 3,
             "ports": {
               "groups": {
                 "top": {
@@ -862,11 +872,10 @@
               ]
             },
             "id": "f3a970bf-de5e-486f-a509-5ba2d98756fa",
-            "zIndex": 3,
             "data": {
               "type": "tm.Actor",
-              "name": "Actor",
-              "description": "",
+              "name": "Administrator",
+              "description": "User interface built with HTML5/JS (React/Vue/Angular) for customers and staff.",
               "isTrustBoundary": false,
               "outOfScope": false,
               "reasonOutOfScope": "",
@@ -885,14 +894,18 @@
               "height": 60
             },
             "attrs": {
+              "text": {
+                "text": "Third Party \nPayment Service"
+              },
               "body": {
                 "stroke": "#333333",
                 "strokeWidth": 1.5,
-                "strokeDasharray": null
+                "strokeDasharray": "4 3"
               }
             },
             "visible": true,
             "shape": "actor",
+            "zIndex": 4,
             "ports": {
               "groups": {
                 "top": {
@@ -976,14 +989,13 @@
               ]
             },
             "id": "80d85b8e-8c8a-4f67-a815-7ed7a22b18a9",
-            "zIndex": 4,
             "data": {
               "type": "tm.Actor",
-              "name": "Actor",
-              "description": "",
+              "name": "Third Party \nPayment Service",
+              "description": "External gateway handling credit/debit, e-wallets, and bank transfers.",
               "isTrustBoundary": false,
-              "outOfScope": false,
-              "reasonOutOfScope": "",
+              "outOfScope": true,
+              "reasonOutOfScope": "Externally managed service; only the integration point is in scope for this model.",
               "hasOpenThreats": false,
               "providesAuthentication": false,
               "threats": []
@@ -1049,7 +1061,13 @@
             "target": {
               "x": 610,
               "y": 370
-            }
+            },
+            "vertices": [
+              {
+                "x": 580,
+                "y": 160
+              }
+            ]
           }
         ]
       }
