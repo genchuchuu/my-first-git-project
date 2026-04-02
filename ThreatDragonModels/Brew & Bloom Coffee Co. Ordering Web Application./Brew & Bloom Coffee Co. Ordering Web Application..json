@@ -1059,7 +1059,7 @@
             "connector": "smooth",
             "data": {
               "type": "tm.Flow",
-              "name": "Sends updated order status",
+              "name": "Updated Order Status",
               "description": "",
               "outOfScope": false,
               "isTrustBoundary": false,
@@ -1073,7 +1073,7 @@
               "trustBoundaryIds": []
             },
             "labels": [
-              "Sends updated order status"
+              "Updated Order Status"
             ],
             "id": "8e1e4aa4-2a66-47c2-8cd6-86afc30bc2f5",
             "source": {
@@ -1084,7 +1084,12 @@
               "cell": "7fcfc36b-a098-4af1-876b-d4482f7d6309",
               "port": "58f0df82-c73d-43ff-828c-9dbadb1881cc"
             },
-            "vertices": []
+            "vertices": [
+              {
+                "x": 270,
+                "y": 170
+              }
+            ]
           },
           {
             "shape": "trust-boundary-curve",
