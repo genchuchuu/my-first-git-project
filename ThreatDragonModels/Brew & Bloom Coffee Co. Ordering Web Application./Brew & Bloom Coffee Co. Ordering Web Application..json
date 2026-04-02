@@ -19,7 +19,7 @@
         "cells": [
           {
             "position": {
-              "x": 140,
+              "x": 50,
               "y": -50
             },
             "size": {
@@ -260,7 +260,7 @@
           },
           {
             "position": {
-              "x": 470,
+              "x": 470.25,
               "y": -50
             },
             "size": {
@@ -380,7 +380,7 @@
           },
           {
             "position": {
-              "x": 719,
+              "x": 769,
               "y": -50
             },
             "size": {
@@ -530,42 +530,263 @@
             ]
           },
           {
-            "shape": "trust-boundary-curve",
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
             "width": 200,
             "height": 100,
             "zIndex": 10,
             "connector": "smooth",
             "data": {
-              "type": "tm.Boundary",
-              "name": "Trust Boundary",
+              "type": "tm.Flow",
+              "name": "Selects items & submits order",
               "description": "",
-              "isTrustBoundary": true,
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
               "hasOpenThreats": false,
-              "crossingFlows": [],
-              "containedElements": []
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [],
+              "trustBoundaryIds": []
             },
             "labels": [
-              "Trust Boundary"
+              "Selects items & submits order"
             ],
-            "id": "9874c0fc-ebac-4322-9995-252b6bbe2147",
+            "id": "3fa18fa5-06c4-49a3-89e3-6b4c5391881c",
             "source": {
-              "x": 370,
-              "y": -150
+              "cell": "f7598c07-5811-4bfb-8f3c-a55254672ab4",
+              "port": "5fe23027-8f48-4f02-8636-d559437eddd1"
             },
             "target": {
-              "x": 370,
-              "y": 200
+              "cell": "0f3f548b-10ab-4f0c-8a59-919ba0f893c5",
+              "port": "c52a37db-edda-4fd2-bb67-3dc7d12b890b"
             },
             "vertices": [
               {
-                "x": 390,
-                "y": 40
+                "x": 350,
+                "y": -50
+              }
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Initiates payment",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [],
+              "trustBoundaryIds": []
+            },
+            "labels": [
+              "Initiates payment"
+            ],
+            "id": "b0e731d2-25b1-4fbb-af9f-5ff383d1f97b",
+            "source": {
+              "cell": "0f3f548b-10ab-4f0c-8a59-919ba0f893c5",
+              "port": "571c6223-4717-4d6e-a914-8db8230530db"
+            },
+            "target": {
+              "cell": "b873eb7a-d409-434b-85bc-7e4ae60ed3e8",
+              "port": "01e6d269-d76b-47df-9943-dd791805df50"
+            },
+            "vertices": [
+              {
+                "x": 650,
+                "y": -50
+              }
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Transaction response",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [],
+              "trustBoundaryIds": []
+            },
+            "labels": [
+              "Transaction response"
+            ],
+            "id": "d319e1f4-9de8-477f-96ee-f4602de0ac08",
+            "source": {
+              "cell": "b873eb7a-d409-434b-85bc-7e4ae60ed3e8",
+              "port": "01e6d269-d76b-47df-9943-dd791805df50"
+            },
+            "target": {
+              "cell": "0f3f548b-10ab-4f0c-8a59-919ba0f893c5",
+              "port": "571c6223-4717-4d6e-a914-8db8230530db"
+            },
+            "vertices": [
+              {
+                "x": 650,
+                "y": 0
+              }
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Records new order & payment status",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [],
+              "trustBoundaryIds": []
+            },
+            "labels": [
+              "Records new order & payment status"
+            ],
+            "id": "c5a5f13c-40f9-4530-a57f-f5ec98a27edc",
+            "source": {
+              "cell": "0f3f548b-10ab-4f0c-8a59-919ba0f893c5",
+              "port": "c0f2075e-e64a-4af3-94ba-42a6b41daedb"
+            },
+            "target": {
+              "cell": "bebc0e76-b084-40a5-84bd-82d7a9166029",
+              "port": "3afde945-a2c0-468d-835b-7ad65b4aa518"
+            },
+            "vertices": []
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Order confirmation & status update",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [],
+              "trustBoundaryIds": []
+            },
+            "labels": [
+              "Order confirmation & status update"
+            ],
+            "id": "092c9503-554b-4316-a7b4-4dcb9c7c2c89",
+            "source": {
+              "cell": "0f3f548b-10ab-4f0c-8a59-919ba0f893c5",
+              "port": "c52a37db-edda-4fd2-bb67-3dc7d12b890b"
+            },
+            "target": {
+              "cell": "f7598c07-5811-4bfb-8f3c-a55254672ab4",
+              "port": "5fe23027-8f48-4f02-8636-d559437eddd1"
+            },
+            "vertices": [
+              {
+                "x": 330,
+                "y": 0
               }
             ]
           },
           {
             "position": {
-              "x": 140,
+              "x": 100,
               "y": -170
             },
             "size": {
@@ -613,7 +834,7 @@
           },
           {
             "position": {
-              "x": 719,
+              "x": 769,
               "y": -170
             },
             "size": {
@@ -634,6 +855,44 @@
               "name": "Third Party Boundary",
               "hasOpenThreats": false
             }
+          },
+          {
+            "shape": "trust-boundary-curve",
+            "width": 200,
+            "height": 100,
+            "zIndex": 14,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Boundary",
+              "name": "Trust Boundary",
+              "description": "",
+              "isTrustBoundary": true,
+              "hasOpenThreats": false,
+              "crossingFlows": [],
+              "containedElements": []
+            },
+            "labels": [
+              "Trust Boundary"
+            ],
+            "id": "9874c0fc-ebac-4322-9995-252b6bbe2147",
+            "source": {
+              "x": 370,
+              "y": -150
+            },
+            "target": {
+              "x": 350,
+              "y": 240
+            },
+            "vertices": [
+              {
+                "x": 390,
+                "y": 30
+              },
+              {
+                "x": 390,
+                "y": 120
+              }
+            ]
           }
         ]
       },
