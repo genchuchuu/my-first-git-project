@@ -38,6 +38,7 @@
             },
             "visible": true,
             "shape": "actor",
+            "zIndex": 1,
             "ports": {
               "groups": {
                 "top": {
@@ -121,7 +122,6 @@
               ]
             },
             "id": "f7598c07-5811-4bfb-8f3c-a55254672ab4",
-            "zIndex": 1,
             "data": {
               "type": "tm.Actor",
               "name": "Customer",
@@ -158,6 +158,7 @@
             },
             "visible": true,
             "shape": "store",
+            "zIndex": 2,
             "ports": {
               "groups": {
                 "top": {
@@ -241,7 +242,6 @@
               ]
             },
             "id": "bebc0e76-b084-40a5-84bd-82d7a9166029",
-            "zIndex": 2,
             "data": {
               "type": "tm.Store",
               "name": "MongoDB",
@@ -279,6 +279,7 @@
             },
             "visible": true,
             "shape": "process",
+            "zIndex": 3,
             "ports": {
               "groups": {
                 "top": {
@@ -362,7 +363,6 @@
               ]
             },
             "id": "0f3f548b-10ab-4f0c-8a59-919ba0f893c5",
-            "zIndex": 3,
             "data": {
               "type": "tm.Process",
               "name": "Backend \nWeb App",
@@ -399,6 +399,7 @@
             },
             "visible": true,
             "shape": "actor",
+            "zIndex": 5,
             "ports": {
               "groups": {
                 "top": {
@@ -482,7 +483,6 @@
               ]
             },
             "id": "b873eb7a-d409-434b-85bc-7e4ae60ed3e8",
-            "zIndex": 5,
             "data": {
               "type": "tm.Actor",
               "name": "Third Party \nPayment Service",
@@ -513,40 +513,6 @@
             "labels": [
               "Trust Boundary"
             ],
-            "id": "9874c0fc-ebac-4322-9995-252b6bbe2147",
-            "source": {
-              "x": 370,
-              "y": -150
-            },
-            "target": {
-              "x": 370,
-              "y": 200
-            },
-            "vertices": [
-              {
-                "x": 390,
-                "y": 40
-              }
-            ]
-          },
-          {
-            "shape": "trust-boundary-curve",
-            "width": 200,
-            "height": 100,
-            "zIndex": 10,
-            "connector": "smooth",
-            "data": {
-              "type": "tm.Boundary",
-              "name": "Trust Boundary",
-              "description": "",
-              "isTrustBoundary": true,
-              "hasOpenThreats": false,
-              "crossingFlows": [],
-              "containedElements": []
-            },
-            "labels": [
-              "Trust Boundary"
-            ],
             "id": "3901003e-e186-4b2b-b2c5-784d2b5e0515",
             "source": {
               "x": 600,
@@ -556,12 +522,6 @@
               "x": 610,
               "y": 200
             },
-            "vertices": [
-              {
-                "x": 630,
-                "y": 30
-              }
-            ],
             "tools": {
               "items": [
                 "boundary",
@@ -701,7 +661,47 @@
                 "target-arrowhead"
               ],
               "name": null
-            }
+            },
+            "vertices": [
+              {
+                "x": 630,
+                "y": 30
+              }
+            ]
+          },
+          {
+            "shape": "trust-boundary-curve",
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Boundary",
+              "name": "Trust Boundary",
+              "description": "",
+              "isTrustBoundary": true,
+              "hasOpenThreats": false,
+              "crossingFlows": [],
+              "containedElements": []
+            },
+            "labels": [
+              "Trust Boundary"
+            ],
+            "id": "9874c0fc-ebac-4322-9995-252b6bbe2147",
+            "source": {
+              "x": 370,
+              "y": -150
+            },
+            "target": {
+              "x": 370,
+              "y": 200
+            },
+            "vertices": [
+              {
+                "x": 390,
+                "y": 40
+              }
+            ]
           }
         ]
       },
