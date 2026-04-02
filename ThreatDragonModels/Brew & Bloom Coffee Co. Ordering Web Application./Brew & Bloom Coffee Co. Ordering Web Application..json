@@ -19,7 +19,7 @@
         "cells": [
           {
             "position": {
-              "x": 210,
+              "x": 140,
               "y": -50
             },
             "size": {
@@ -380,7 +380,7 @@
           },
           {
             "position": {
-              "x": 669,
+              "x": 719,
               "y": -50
             },
             "size": {
@@ -565,7 +565,7 @@
           },
           {
             "position": {
-              "x": 180,
+              "x": 140,
               "y": -170
             },
             "size": {
@@ -613,7 +613,7 @@
           },
           {
             "position": {
-              "x": 669,
+              "x": 719,
               "y": -170
             },
             "size": {
@@ -633,13 +633,6 @@
               "type": "tm.Text",
               "name": "Third Party Boundary",
               "hasOpenThreats": false
-            },
-            "tools": {
-              "items": [
-                "boundary",
-                "button-remove"
-              ],
-              "name": null
             }
           }
         ]
