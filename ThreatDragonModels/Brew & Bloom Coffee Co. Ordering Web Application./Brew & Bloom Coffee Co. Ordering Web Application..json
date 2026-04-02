@@ -1003,17 +1003,17 @@
             ],
             "id": "63a7090f-0963-4636-b77e-e328a9c77fed",
             "source": {
-              "x": 340,
-              "y": 60
+              "x": 270,
+              "y": 40
             },
             "target": {
-              "x": 350,
-              "y": 370
+              "x": 260,
+              "y": 500
             },
             "vertices": [
               {
-                "x": 320,
-                "y": 210
+                "x": 230,
+                "y": 260
               }
             ]
           },
@@ -1033,8 +1033,8 @@
             },
             "visible": true,
             "shape": "td-text-block",
-            "id": "c076b2fb-9e6d-4dc9-889f-034700c85525",
             "zIndex": 11,
+            "id": "c076b2fb-9e6d-4dc9-889f-034700c85525",
             "data": {
               "type": "tm.Text",
               "name": "Public/ Untrusted Boundary",
@@ -1057,8 +1057,8 @@
             },
             "visible": true,
             "shape": "td-text-block",
-            "id": "598a98e0-3328-4f82-a9db-523e63a0d1b9",
             "zIndex": 12,
+            "id": "598a98e0-3328-4f82-a9db-523e63a0d1b9",
             "data": {
               "type": "tm.Text",
               "name": "Shop Internal Boundary",
@@ -1081,8 +1081,8 @@
             },
             "visible": true,
             "shape": "td-text-block",
-            "id": "97fde0de-1c4c-4f92-8345-244789c3c269",
             "zIndex": 13,
+            "id": "97fde0de-1c4c-4f92-8345-244789c3c269",
             "data": {
               "type": "tm.Text",
               "name": "Third Party Boundary",
@@ -1114,22 +1114,78 @@
             },
             "target": {
               "x": 650,
-              "y": 480
+              "y": 500
             },
             "vertices": [
               {
-                "x": 550,
-                "y": 210
-              },
-              {
-                "x": 630,
-                "y": 210
+                "x": 600,
+                "y": 280
               },
               {
                 "x": 630,
                 "y": 440
               }
-            ]
+            ],
+            "tools": {
+              "items": [
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead"
+              ],
+              "name": null
+            }
           }
         ]
       },
