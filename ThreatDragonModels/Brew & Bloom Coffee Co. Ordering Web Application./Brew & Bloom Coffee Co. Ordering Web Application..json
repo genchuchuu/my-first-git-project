@@ -1061,38 +1061,14 @@
             ]
           },
           {
-            "position": {
-              "x": 699,
-              "y": 39
-            },
-            "size": {
-              "width": 112.5,
-              "height": 60
-            },
-            "attrs": {
-              "text": {
-                "text": "Third Party Boundary"
-              }
-            },
-            "visible": true,
-            "shape": "td-text-block",
-            "zIndex": 13,
-            "id": "da53dba3-2efe-4b25-a5b2-53aac4d09472",
-            "data": {
-              "type": "tm.Text",
-              "name": "Third Party Boundary",
-              "hasOpenThreats": false
-            }
-          },
-          {
             "shape": "trust-boundary-curve",
             "width": 200,
             "height": 100,
-            "zIndex": 14,
+            "zIndex": 10,
             "connector": "smooth",
             "data": {
               "type": "tm.Boundary",
-              "name": "Trust Boundary",
+              "name": "Server/ DB Boundary",
               "description": "",
               "isTrustBoundary": true,
               "hasOpenThreats": false,
@@ -1100,25 +1076,21 @@
               "containedElements": []
             },
             "labels": [
-              "Trust Boundary"
+              "Server/ DB Boundary"
             ],
-            "id": "7284eb64-716f-44ae-86db-23c5ef864b2b",
+            "id": "59a67bce-f900-402d-a837-49bc49de4703",
             "source": {
-              "x": 40,
+              "x": 100,
               "y": 390
             },
             "target": {
-              "x": 800,
-              "y": 360
+              "x": 750,
+              "y": 390
             },
             "vertices": [
               {
-                "x": 160,
-                "y": 360
-              },
-              {
-                "x": 430,
-                "y": 330
+                "x": 410,
+                "y": 370
               }
             ]
           }
