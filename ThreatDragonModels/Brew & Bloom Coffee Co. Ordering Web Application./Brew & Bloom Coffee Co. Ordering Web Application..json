@@ -348,13 +348,6 @@
                 "informationDisclosure": 1,
                 "denialOfService": 1
               }
-            },
-            "tools": {
-              "items": [
-                "boundary",
-                "button-remove"
-              ],
-              "name": null
             }
           },
           {
@@ -604,13 +597,39 @@
                   "new": false,
                   "number": 12,
                   "score": ""
+                },
+                {
+                  "id": "fa5f071c-46bf-45f3-a616-e7afacf09021",
+                  "title": "New STRIDE threat",
+                  "status": "Open",
+                  "severity": "TBD",
+                  "type": "Repudiation",
+                  "description": "Provide a description for this threat",
+                  "mitigation": "Provide remediation for this threat or a reason if status is N/A",
+                  "modelType": "STRIDE",
+                  "new": true,
+                  "number": 17,
+                  "score": ""
+                },
+                {
+                  "id": "9440b6ed-7794-4b4c-8362-0c39cf4c4caa",
+                  "title": "Application Code and Configuration Disclosure",
+                  "status": "Open",
+                  "severity": "Medium",
+                  "type": "Information disclosure",
+                  "description": "Exposure of source code, server configurations, environment variables,\nor API keys.",
+                  "mitigation": "Provide remediation for this threat or a reason if status is N/A",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 18,
+                  "score": ""
                 }
               ],
               "threatFrequency": {
                 "spoofing": 2,
                 "tampering": 3,
                 "repudiation": 1,
-                "informationDisclosure": 1,
+                "informationDisclosure": 2,
                 "denialOfService": 2,
                 "elevationOfPrivilege": 2
               }
@@ -1217,6 +1236,6 @@
     ],
     "diagramTop": 4,
     "reviewer": "",
-    "threatTop": 16
+    "threatTop": 18
   }
 }
