@@ -519,8 +519,8 @@
                 "text": "Barista"
               },
               "body": {
-                "stroke": "#333333",
-                "strokeWidth": 1.5,
+                "stroke": "red",
+                "strokeWidth": 2.5,
                 "strokeDasharray": null
               }
             },
@@ -617,9 +617,40 @@
               "isTrustBoundary": false,
               "outOfScope": false,
               "reasonOutOfScope": "",
-              "hasOpenThreats": false,
+              "hasOpenThreats": true,
               "providesAuthentication": false,
-              "threats": []
+              "threats": [
+                {
+                  "id": "4dd5120a-2512-48fb-bf79-e37448509962",
+                  "title": "Staff Account Spoofing",
+                  "status": "Open",
+                  "severity": "Medium",
+                  "type": "Spoofing",
+                  "description": "An attacker could impersonate staff to manipulate order statuses, access sales reports, or modify menu items and application configurations.",
+                  "mitigation": "Provide remediation for this threat or a reason if status is N/A",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 1,
+                  "score": ""
+                },
+                {
+                  "id": "8346c256-e3cd-4547-b989-29038aecb430",
+                  "title": "Web Application Server Spoofing",
+                  "status": "Open",
+                  "severity": "Medium",
+                  "type": "Spoofing",
+                  "description": "An attacker might set up a fraudulent web server to phish user credentials or intercept sensitive data.",
+                  "mitigation": "Provide remediation for this threat or a reason if status is N/A",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 2,
+                  "score": ""
+                }
+              ],
+              "threatFrequency": {
+                "spoofing": 2,
+                "repudiation": 0
+              }
             }
           },
           {
@@ -740,6 +771,13 @@
               "isWebApplication": true,
               "privilegeLevel": "High",
               "threats": []
+            },
+            "tools": {
+              "items": [
+                "boundary",
+                "button-remove"
+              ],
+              "name": null
             }
           },
           {
@@ -861,8 +899,8 @@
           },
           {
             "position": {
-              "x": 380,
-              "y": 360
+              "x": 376.25,
+              "y": 400
             },
             "size": {
               "width": 120,
@@ -1172,7 +1210,7 @@
             },
             "vertices": [
               {
-                "x": 580,
+                "x": 560,
                 "y": 190
               }
             ]
@@ -1276,7 +1314,7 @@
             },
             "vertices": [
               {
-                "x": 360,
+                "x": 350,
                 "y": 230
               }
             ]
@@ -1478,6 +1516,6 @@
     ],
     "diagramTop": 4,
     "reviewer": "",
-    "threatTop": 0
+    "threatTop": 2
   }
 }
