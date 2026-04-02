@@ -504,20 +504,11 @@
         "placeholder": "New STRIDE diagram description",
         "thumbnail": "./public/content/images/thumbnail.stride.jpg",
         "version": "2.6.1-RC1",
-        "cells": []
-      },
-      {
-        "id": 2,
-        "title": "Manager Accesses Basic Sales Reports",
-        "diagramType": "STRIDE",
-        "placeholder": "New STRIDE diagram description",
-        "thumbnail": "./public/content/images/thumbnail.stride.jpg",
-        "version": "2.6.1-RC1",
         "cells": [
           {
             "position": {
-              "x": 120,
-              "y": 140
+              "x": 160,
+              "y": 120
             },
             "size": {
               "width": 112.5,
@@ -525,7 +516,7 @@
             },
             "attrs": {
               "text": {
-                "text": "Manager"
+                "text": "Barista"
               },
               "body": {
                 "stroke": "#333333",
@@ -535,6 +526,7 @@
             },
             "visible": true,
             "shape": "actor",
+            "zIndex": 1,
             "ports": {
               "groups": {
                 "top": {
@@ -601,27 +593,26 @@
               "items": [
                 {
                   "group": "top",
-                  "id": "a9c84086-df8d-4bc5-ba82-db361ca46094"
+                  "id": "de632ffd-a804-418a-b066-c7fe2d020b7c"
                 },
                 {
                   "group": "right",
-                  "id": "db1832e5-1716-4f12-912f-c75cbf038d41"
+                  "id": "b6dcfdae-9060-444b-9a7d-42793b3ef33e"
                 },
                 {
                   "group": "bottom",
-                  "id": "0b5c1c25-90bf-42c4-aba6-b050c9e1ea76"
+                  "id": "7325c018-287e-45e4-a97a-a66f3aac4b2c"
                 },
                 {
                   "group": "left",
-                  "id": "420a524f-2646-4c5d-884e-511db7810c5e"
+                  "id": "9d4630d9-7676-4159-b492-5df898675d2a"
                 }
               ]
             },
-            "id": "ddbcae1c-3d39-47ce-b456-fb51668aecbe",
-            "zIndex": 1,
+            "id": "0656ac5c-7e57-4b07-8e73-aa9cda58631b",
             "data": {
               "type": "tm.Actor",
-              "name": "Manager",
+              "name": "Barista",
               "description": "User interface built with HTML5/JS (React/Vue/Angular) for customers and staff.",
               "isTrustBoundary": false,
               "outOfScope": false,
@@ -633,8 +624,8 @@
           },
           {
             "position": {
-              "x": 415,
-              "y": 140
+              "x": 410,
+              "y": 120
             },
             "size": {
               "width": 60,
@@ -652,6 +643,7 @@
             },
             "visible": true,
             "shape": "process",
+            "zIndex": 2,
             "ports": {
               "groups": {
                 "top": {
@@ -718,24 +710,23 @@
               "items": [
                 {
                   "group": "top",
-                  "id": "1fdbc4ec-39e7-4d7d-a894-4e2d50a96e59"
+                  "id": "43595dbe-ffb2-4518-abbc-42c52cc71685"
                 },
                 {
                   "group": "right",
-                  "id": "114c49f5-d47f-4811-b916-d89670229256"
+                  "id": "b2d9939e-a64d-4ee5-9971-48a21ae380d3"
                 },
                 {
                   "group": "bottom",
-                  "id": "0bfa3a0a-ba07-4f26-a9ce-1d8faf9e450d"
+                  "id": "1cdac2e4-91a0-4cd7-9986-47445bd7db7a"
                 },
                 {
                   "group": "left",
-                  "id": "aa3d9a49-fc34-41d6-b5db-fd540ebc7ba6"
+                  "id": "58f0df82-c73d-43ff-828c-9dbadb1881cc"
                 }
               ]
             },
-            "id": "12320c2c-75da-480a-b44a-22fb8136344a",
-            "zIndex": 2,
+            "id": "7fcfc36b-a098-4af1-876b-d4482f7d6309",
             "data": {
               "type": "tm.Process",
               "name": "Backend \nWeb App",
@@ -753,8 +744,8 @@
           },
           {
             "position": {
-              "x": 679,
-              "y": 140
+              "x": 625,
+              "y": 120
             },
             "size": {
               "width": 112.5,
@@ -772,6 +763,7 @@
             },
             "visible": true,
             "shape": "actor",
+            "zIndex": 3,
             "ports": {
               "groups": {
                 "top": {
@@ -838,24 +830,23 @@
               "items": [
                 {
                   "group": "top",
-                  "id": "a9c84086-df8d-4bc5-ba82-db361ca46094"
+                  "id": "de632ffd-a804-418a-b066-c7fe2d020b7c"
                 },
                 {
                   "group": "right",
-                  "id": "db1832e5-1716-4f12-912f-c75cbf038d41"
+                  "id": "b6dcfdae-9060-444b-9a7d-42793b3ef33e"
                 },
                 {
                   "group": "bottom",
-                  "id": "0b5c1c25-90bf-42c4-aba6-b050c9e1ea76"
+                  "id": "7325c018-287e-45e4-a97a-a66f3aac4b2c"
                 },
                 {
                   "group": "left",
-                  "id": "420a524f-2646-4c5d-884e-511db7810c5e"
+                  "id": "9d4630d9-7676-4159-b492-5df898675d2a"
                 }
               ]
             },
-            "id": "f6b827d7-5b42-443f-9847-b9bfaffee340",
-            "zIndex": 3,
+            "id": "073a5d05-f1b2-464d-8973-73839f04dc4f",
             "data": {
               "type": "tm.Actor",
               "name": "Third Party \nPayment Service",
@@ -879,8 +870,8 @@
           },
           {
             "position": {
-              "x": 385,
-              "y": 314
+              "x": 380,
+              "y": 260
             },
             "size": {
               "width": 120,
@@ -901,6 +892,7 @@
             },
             "visible": true,
             "shape": "store",
+            "zIndex": 4,
             "ports": {
               "groups": {
                 "top": {
@@ -967,24 +959,23 @@
               "items": [
                 {
                   "group": "top",
-                  "id": "c7bee109-9f07-4020-b5aa-80b9a845e6aa"
+                  "id": "20c8d971-c4f2-4b66-9cea-07bb569f9584"
                 },
                 {
                   "group": "right",
-                  "id": "047cb5e1-a07d-4639-ad44-bc00763a7053"
+                  "id": "c0dacb10-1f31-45f2-8d51-8d86420b14f1"
                 },
                 {
                   "group": "bottom",
-                  "id": "84f323ca-6f75-4e3d-a003-0cc6f1d59ac8"
+                  "id": "656751b8-0de0-4659-89b8-7802acc40917"
                 },
                 {
                   "group": "left",
-                  "id": "1a93ed04-d943-4866-8b26-d5a534dcce46"
+                  "id": "575868a8-8452-463e-8ee1-15dcf9423c77"
                 }
               ]
             },
-            "id": "75d2c303-be84-448f-b213-9bf0b14bd007",
-            "zIndex": 4,
+            "id": "769c6be9-9afd-4911-989c-dfa9b6e18801",
             "data": {
               "type": "tm.Store",
               "name": "MongoDB",
@@ -1019,19 +1010,19 @@
             "labels": [
               "Trust Boundary"
             ],
-            "id": "6ac73b2f-55ec-4e99-b4e8-ef4a3a19b161",
+            "id": "63a7090f-0963-4636-b77e-e328a9c77fed",
             "source": {
-              "x": 600,
-              "y": 70
+              "x": 340,
+              "y": 60
             },
             "target": {
-              "x": 620,
-              "y": 460
+              "x": 350,
+              "y": 370
             },
             "vertices": [
               {
-                "x": 580,
-                "y": 260
+                "x": 320,
+                "y": 210
               }
             ]
           },
@@ -1053,93 +1044,32 @@
             "labels": [
               "Trust Boundary"
             ],
-            "id": "638d4b02-4763-4c12-88d1-eae631ca5f7e",
+            "id": "179f486d-3b25-4ca4-a231-f0c4312750cf",
             "source": {
-              "x": 320,
-              "y": 70
+              "x": 570,
+              "y": 60
             },
             "target": {
-              "x": 320,
-              "y": 460
+              "x": 580,
+              "y": 370
             },
             "vertices": [
               {
-                "x": 290,
-                "y": 260
+                "x": 550,
+                "y": 210
               }
-            ],
-            "tools": {
-              "items": [
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead"
-              ],
-              "name": null
-            }
+            ]
           }
         ]
+      },
+      {
+        "id": 2,
+        "title": "Manager Accesses Basic Sales Reports",
+        "diagramType": "STRIDE",
+        "placeholder": "New STRIDE diagram description",
+        "thumbnail": "./public/content/images/thumbnail.stride.jpg",
+        "version": "2.6.1-RC1",
+        "cells": []
       },
       {
         "id": 3,
