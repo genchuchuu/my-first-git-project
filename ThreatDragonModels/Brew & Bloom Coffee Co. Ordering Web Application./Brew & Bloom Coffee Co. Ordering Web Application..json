@@ -513,28 +513,40 @@
         "placeholder": "New STRIDE diagram description",
         "thumbnail": "./public/content/images/thumbnail.stride.jpg",
         "version": "2.6.1-RC1",
+        "cells": []
+      },
+      {
+        "id": 3,
+        "title": "Administrator Adds New Menu Item",
+        "diagramType": "STRIDE",
+        "placeholder": "New STRIDE diagram description",
+        "thumbnail": "./public/content/images/thumbnail.stride.jpg",
+        "version": "2.6.1-RC1",
         "cells": [
           {
             "position": {
-              "x": 60,
-              "y": 140
+              "x": 380,
+              "y": 250
             },
             "size": {
-              "width": 112.5,
+              "width": 120,
               "height": 60
             },
             "attrs": {
               "text": {
-                "text": "Manager"
+                "text": "MongoDB"
               },
-              "body": {
-                "stroke": "#333333",
+              "topLine": {
+                "strokeWidth": 1.5,
+                "strokeDasharray": null
+              },
+              "bottomLine": {
                 "strokeWidth": 1.5,
                 "strokeDasharray": null
               }
             },
             "visible": true,
-            "shape": "actor",
+            "shape": "store",
             "zIndex": 1,
             "ports": {
               "groups": {
@@ -602,39 +614,43 @@
               "items": [
                 {
                   "group": "top",
-                  "id": "a9c84086-df8d-4bc5-ba82-db361ca46094"
+                  "id": "e160b616-e9ae-44a6-a7a7-7a6c3375b82e"
                 },
                 {
                   "group": "right",
-                  "id": "db1832e5-1716-4f12-912f-c75cbf038d41"
+                  "id": "36816a13-0127-47a3-aa8b-b781cd275f64"
                 },
                 {
                   "group": "bottom",
-                  "id": "0b5c1c25-90bf-42c4-aba6-b050c9e1ea76"
+                  "id": "79911c08-816b-4b21-bd78-8d646eae584d"
                 },
                 {
                   "group": "left",
-                  "id": "420a524f-2646-4c5d-884e-511db7810c5e"
+                  "id": "a9d2b4cc-8d4d-4102-add4-3fd410f32a2b"
                 }
               ]
             },
-            "id": "ddbcae1c-3d39-47ce-b456-fb51668aecbe",
+            "id": "5c00d1d7-8440-47f3-ba3b-301c68be179d",
             "data": {
-              "type": "tm.Actor",
-              "name": "Manager",
-              "description": "User interface built with HTML5/JS (React/Vue/Angular) for customers and staff.",
-              "isTrustBoundary": false,
+              "type": "tm.Store",
+              "name": "MongoDB",
+              "description": "Persistent data store for user profiles, menu items, order records, and staff roles.",
               "outOfScope": false,
+              "isTrustBoundary": false,
               "reasonOutOfScope": "",
               "hasOpenThreats": false,
-              "providesAuthentication": false,
+              "isALog": true,
+              "isEncrypted": true,
+              "isSigned": false,
+              "storesCredentials": true,
+              "storesInventory": true,
               "threats": []
             }
           },
           {
             "position": {
-              "x": 415,
-              "y": 140
+              "x": 410,
+              "y": 32
             },
             "size": {
               "width": 60,
@@ -719,23 +735,23 @@
               "items": [
                 {
                   "group": "top",
-                  "id": "1fdbc4ec-39e7-4d7d-a894-4e2d50a96e59"
+                  "id": "f0e1868c-1612-498b-b52d-ed7bf624309f"
                 },
                 {
                   "group": "right",
-                  "id": "114c49f5-d47f-4811-b916-d89670229256"
+                  "id": "3d085e91-9984-4235-9e81-088bc8a7514f"
                 },
                 {
                   "group": "bottom",
-                  "id": "0bfa3a0a-ba07-4f26-a9ce-1d8faf9e450d"
+                  "id": "49800d81-1ab5-4b0e-a9b8-8e2d3820b39f"
                 },
                 {
                   "group": "left",
-                  "id": "aa3d9a49-fc34-41d6-b5db-fd540ebc7ba6"
+                  "id": "e97c6671-d216-463d-83ba-113072b740dd"
                 }
               ]
             },
-            "id": "12320c2c-75da-480a-b44a-22fb8136344a",
+            "id": "b74be3b7-0dbd-421b-b0ba-be1d1204a681",
             "data": {
               "type": "tm.Process",
               "name": "Backend \nWeb App",
@@ -753,8 +769,8 @@
           },
           {
             "position": {
-              "x": 699,
-              "y": 140
+              "x": 90,
+              "y": 32
             },
             "size": {
               "width": 112.5,
@@ -762,12 +778,12 @@
             },
             "attrs": {
               "text": {
-                "text": "Third Party \nPayment Service"
+                "text": "Administrator"
               },
               "body": {
                 "stroke": "#333333",
                 "strokeWidth": 1.5,
-                "strokeDasharray": "4 3"
+                "strokeDasharray": null
               }
             },
             "visible": true,
@@ -839,30 +855,30 @@
               "items": [
                 {
                   "group": "top",
-                  "id": "a9c84086-df8d-4bc5-ba82-db361ca46094"
+                  "id": "afdb1187-4273-43f9-9ca0-b1890f7f8e89"
                 },
                 {
                   "group": "right",
-                  "id": "db1832e5-1716-4f12-912f-c75cbf038d41"
+                  "id": "cdca9906-b848-49eb-a027-b7e167d21fcd"
                 },
                 {
                   "group": "bottom",
-                  "id": "0b5c1c25-90bf-42c4-aba6-b050c9e1ea76"
+                  "id": "57477d6a-3542-45f2-948e-a1c4ecaf134c"
                 },
                 {
                   "group": "left",
-                  "id": "420a524f-2646-4c5d-884e-511db7810c5e"
+                  "id": "38692fe0-500d-4966-913f-38b9a56226d9"
                 }
               ]
             },
-            "id": "f6b827d7-5b42-443f-9847-b9bfaffee340",
+            "id": "f3a970bf-de5e-486f-a509-5ba2d98756fa",
             "data": {
               "type": "tm.Actor",
-              "name": "Third Party \nPayment Service",
-              "description": "External gateway handling credit/debit, e-wallets, and bank transfers.",
+              "name": "Administrator",
+              "description": "User interface built with HTML5/JS (React/Vue/Angular) for customers and staff.",
               "isTrustBoundary": false,
-              "outOfScope": true,
-              "reasonOutOfScope": "Externally managed service; only the integration point is in scope for this model.",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
               "hasOpenThreats": false,
               "providesAuthentication": false,
               "threats": []
@@ -870,28 +886,25 @@
           },
           {
             "position": {
-              "x": 385,
-              "y": 424
+              "x": 700,
+              "y": 32
             },
             "size": {
-              "width": 120,
+              "width": 112.5,
               "height": 60
             },
             "attrs": {
               "text": {
-                "text": "MongoDB"
+                "text": "Third Party \nPayment Service"
               },
-              "topLine": {
+              "body": {
+                "stroke": "#333333",
                 "strokeWidth": 1.5,
-                "strokeDasharray": null
-              },
-              "bottomLine": {
-                "strokeWidth": 1.5,
-                "strokeDasharray": null
+                "strokeDasharray": "4 3"
               }
             },
             "visible": true,
-            "shape": "store",
+            "shape": "actor",
             "zIndex": 4,
             "ports": {
               "groups": {
@@ -959,36 +972,32 @@
               "items": [
                 {
                   "group": "top",
-                  "id": "c7bee109-9f07-4020-b5aa-80b9a845e6aa"
+                  "id": "afdb1187-4273-43f9-9ca0-b1890f7f8e89"
                 },
                 {
                   "group": "right",
-                  "id": "047cb5e1-a07d-4639-ad44-bc00763a7053"
+                  "id": "cdca9906-b848-49eb-a027-b7e167d21fcd"
                 },
                 {
                   "group": "bottom",
-                  "id": "84f323ca-6f75-4e3d-a003-0cc6f1d59ac8"
+                  "id": "57477d6a-3542-45f2-948e-a1c4ecaf134c"
                 },
                 {
                   "group": "left",
-                  "id": "1a93ed04-d943-4866-8b26-d5a534dcce46"
+                  "id": "38692fe0-500d-4966-913f-38b9a56226d9"
                 }
               ]
             },
-            "id": "75d2c303-be84-448f-b213-9bf0b14bd007",
+            "id": "80d85b8e-8c8a-4f67-a815-7ed7a22b18a9",
             "data": {
-              "type": "tm.Store",
-              "name": "MongoDB",
-              "description": "Persistent data store for user profiles, menu items, order records, and staff roles.",
-              "outOfScope": false,
+              "type": "tm.Actor",
+              "name": "Third Party \nPayment Service",
+              "description": "External gateway handling credit/debit, e-wallets, and bank transfers.",
               "isTrustBoundary": false,
-              "reasonOutOfScope": "",
+              "outOfScope": true,
+              "reasonOutOfScope": "Externally managed service; only the integration point is in scope for this model.",
               "hasOpenThreats": false,
-              "isALog": true,
-              "isEncrypted": true,
-              "isSigned": false,
-              "storesCredentials": true,
-              "storesInventory": true,
+              "providesAuthentication": false,
               "threats": []
             }
           },
@@ -1010,19 +1019,19 @@
             "labels": [
               "Client/ Server\nBoundary"
             ],
-            "id": "638d4b02-4763-4c12-88d1-eae631ca5f7e",
+            "id": "ad07590e-4b27-425d-ab54-8338e181fb17",
             "source": {
-              "x": 320,
-              "y": 70
+              "x": 310,
+              "y": -40
             },
             "target": {
-              "x": 320,
-              "y": 510
+              "x": 310,
+              "y": 360
             },
             "vertices": [
               {
                 "x": 290,
-                "y": 260
+                "y": 160
               }
             ]
           },
@@ -1044,19 +1053,19 @@
             "labels": [
               "Server/ Payment\nBoundary"
             ],
-            "id": "6ac73b2f-55ec-4e99-b4e8-ef4a3a19b161",
+            "id": "614aeb8b-fef0-4cb0-bdcd-43d1e138c6be",
             "source": {
               "x": 600,
-              "y": 70
+              "y": -40
             },
             "target": {
-              "x": 620,
-              "y": 510
+              "x": 610,
+              "y": 370
             },
             "vertices": [
               {
                 "x": 580,
-                "y": 260
+                "y": 160
               }
             ]
           },
@@ -1078,32 +1087,98 @@
             "labels": [
               "Server/ DB Boundary"
             ],
-            "id": "59a67bce-f900-402d-a837-49bc49de4703",
+            "id": "39117c67-a386-417d-9955-76cba21aa032",
             "source": {
-              "x": 100,
-              "y": 390
+              "x": 86,
+              "y": 250
             },
             "target": {
-              "x": 750,
-              "y": 390
+              "x": 790,
+              "y": 250
             },
             "vertices": [
               {
-                "x": 410,
-                "y": 370
+                "x": 460,
+                "y": 210
               }
-            ]
+            ],
+            "tools": {
+              "items": [
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead"
+              ],
+              "name": null
+            }
           }
         ]
-      },
-      {
-        "id": 3,
-        "title": "Administrator Adds New Menu Item",
-        "diagramType": "STRIDE",
-        "placeholder": "New STRIDE diagram description",
-        "thumbnail": "./public/content/images/thumbnail.stride.jpg",
-        "version": "2.6.1-RC1",
-        "cells": []
       }
     ],
     "diagramTop": 4,
