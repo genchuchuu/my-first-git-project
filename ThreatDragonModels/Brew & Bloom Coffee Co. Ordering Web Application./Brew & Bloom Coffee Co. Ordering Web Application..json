@@ -599,19 +599,6 @@
                   "score": ""
                 },
                 {
-                  "id": "fa5f071c-46bf-45f3-a616-e7afacf09021",
-                  "title": "New STRIDE threat",
-                  "status": "Open",
-                  "severity": "TBD",
-                  "type": "Repudiation",
-                  "description": "Provide a description for this threat",
-                  "mitigation": "Provide remediation for this threat or a reason if status is N/A",
-                  "modelType": "STRIDE",
-                  "new": true,
-                  "number": 17,
-                  "score": ""
-                },
-                {
                   "id": "9440b6ed-7794-4b4c-8362-0c39cf4c4caa",
                   "title": "Application Code and Configuration Disclosure",
                   "status": "Open",
