@@ -4017,25 +4017,19 @@
                   "new": false,
                   "number": 3,
                   "score": ""
-                },
-                {
-                  "id": "21cd5959-145e-421a-a883-4ad1cccf4056",
-                  "title": "New STRIDE threat",
-                  "status": "Open",
-                  "severity": "TBD",
-                  "type": "Repudiation",
-                  "description": "Provide a description for this threat",
-                  "mitigation": "Provide remediation for this threat or a reason if status is N/A",
-                  "modelType": "STRIDE",
-                  "new": true,
-                  "number": 4,
-                  "score": ""
                 }
               ],
               "threatFrequency": {
                 "spoofing": 2,
                 "repudiation": 0
               }
+            },
+            "tools": {
+              "items": [
+                "boundary",
+                "button-remove"
+              ],
+              "name": null
             }
           },
           {
