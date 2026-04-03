@@ -2668,7 +2668,7 @@
                   "title": "Web Application Server Spoofing",
                   "status": "Open",
                   "severity": "Medium",
-                  "type": "Tampering",
+                  "type": "Spoofing",
                   "description": "An attacker might set up a fraudulent web server to phish user credentials or intercept sensitive data.",
                   "mitigation": "Provide remediation for this threat or a reason if status is N/A",
                   "modelType": "STRIDE",
@@ -2795,7 +2795,7 @@
                 }
               ],
               "threatFrequency": {
-                "spoofing": 1,
+                "spoofing": 2,
                 "tampering": 4,
                 "repudiation": 1,
                 "informationDisclosure": 3,
@@ -2805,6 +2805,10 @@
             },
             "tools": {
               "items": [
+                "boundary",
+                "button-remove",
+                "boundary",
+                "button-remove",
                 "boundary",
                 "button-remove"
               ],
