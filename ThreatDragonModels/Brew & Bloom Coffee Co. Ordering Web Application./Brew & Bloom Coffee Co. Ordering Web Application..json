@@ -1034,40 +1034,6 @@
             "connector": "smooth",
             "data": {
               "type": "tm.Boundary",
-              "name": "Server/ Payment\nBoundary",
-              "description": "",
-              "isTrustBoundary": true,
-              "hasOpenThreats": false,
-              "crossingFlows": [],
-              "containedElements": []
-            },
-            "labels": [
-              "Server/ Payment\nBoundary"
-            ],
-            "id": "6ac73b2f-55ec-4e99-b4e8-ef4a3a19b161",
-            "source": {
-              "x": 600,
-              "y": 70
-            },
-            "target": {
-              "x": 620,
-              "y": 510
-            },
-            "vertices": [
-              {
-                "x": 580,
-                "y": 260
-              }
-            ]
-          },
-          {
-            "shape": "trust-boundary-curve",
-            "width": 200,
-            "height": 100,
-            "zIndex": 10,
-            "connector": "smooth",
-            "data": {
-              "type": "tm.Boundary",
               "name": "Server/ DB Boundary",
               "description": "",
               "isTrustBoundary": true,
@@ -1114,7 +1080,7 @@
             "connector": "smooth",
             "data": {
               "type": "tm.Flow",
-              "name": "Data Flow",
+              "name": "Login Request & View Sales Reports",
               "description": "",
               "outOfScope": false,
               "isTrustBoundary": false,
@@ -1128,7 +1094,7 @@
               "trustBoundaryIds": []
             },
             "labels": [
-              "Data Flow"
+              "Login Request & View Sales Reports"
             ],
             "id": "56d61440-5a10-4ede-8831-bf663bf74c9b",
             "source": {
@@ -1194,19 +1160,13 @@
             "vertices": [
               {
                 "x": 300,
-                "y": 190
+                "y": 200
+              },
+              {
+                "x": 270,
+                "y": 200
               }
-            ],
-            "tools": {
-              "items": [
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead"
-              ],
-              "name": null
-            }
+            ]
           },
           {
             "shape": "flow",
@@ -1228,7 +1188,7 @@
             "connector": "smooth",
             "data": {
               "type": "tm.Flow",
-              "name": "Data Flow",
+              "name": "Query Aggregated\n Sales Data",
               "description": "",
               "outOfScope": false,
               "isTrustBoundary": false,
@@ -1242,7 +1202,7 @@
               "trustBoundaryIds": []
             },
             "labels": [
-              "Data Flow"
+              "Query Aggregated\n Sales Data"
             ],
             "id": "f2e82603-d3d3-42c3-b615-98834cb562d5",
             "source": {
@@ -1255,7 +1215,7 @@
             },
             "vertices": [
               {
-                "x": 480,
+                "x": 510,
                 "y": 300
               }
             ]
@@ -1280,7 +1240,7 @@
             "connector": "smooth",
             "data": {
               "type": "tm.Flow",
-              "name": "Data Flow",
+              "name": "Aggregated \nSales Data",
               "description": "",
               "outOfScope": false,
               "isTrustBoundary": false,
@@ -1294,7 +1254,7 @@
               "trustBoundaryIds": []
             },
             "labels": [
-              "Data Flow"
+              "Aggregated \nSales Data"
             ],
             "id": "49a3f04e-bb35-4435-aba8-8a22107090c7",
             "source": {
@@ -1307,8 +1267,42 @@
             },
             "vertices": [
               {
-                "x": 400,
-                "y": 310
+                "x": 380,
+                "y": 300
+              }
+            ]
+          },
+          {
+            "shape": "trust-boundary-curve",
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Boundary",
+              "name": "Server/ Payment\nBoundary",
+              "description": "",
+              "isTrustBoundary": true,
+              "hasOpenThreats": false,
+              "crossingFlows": [],
+              "containedElements": []
+            },
+            "labels": [
+              "Server/ Payment\nBoundary"
+            ],
+            "id": "6ac73b2f-55ec-4e99-b4e8-ef4a3a19b161",
+            "source": {
+              "x": 640,
+              "y": 70
+            },
+            "target": {
+              "x": 660,
+              "y": 510
+            },
+            "vertices": [
+              {
+                "x": 620,
+                "y": 270
               }
             ]
           }
