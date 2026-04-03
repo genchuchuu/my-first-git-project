@@ -524,7 +524,7 @@
                   "id": "bcd3f064-39ab-4e15-9071-f0130a371896",
                   "title": "Fraudulent Order Repudiation ",
                   "status": "Open",
-                  "severity": "TBD",
+                  "severity": "Medium",
                   "type": "Repudiation",
                   "description": "A customer could deny placing an order if insufficient logging and non- repudiation controls are in place.",
                   "mitigation": "Provide remediation for this threat or a reason if status is N/A",
@@ -615,11 +615,20 @@
               "threatFrequency": {
                 "spoofing": 2,
                 "tampering": 3,
-                "repudiation": 1,
+                "repudiation": 2,
                 "informationDisclosure": 2,
                 "denialOfService": 2,
                 "elevationOfPrivilege": 2
               }
+            },
+            "tools": {
+              "items": [
+                "boundary",
+                "button-remove",
+                "boundary",
+                "button-remove"
+              ],
+              "name": null
             }
           },
           {
