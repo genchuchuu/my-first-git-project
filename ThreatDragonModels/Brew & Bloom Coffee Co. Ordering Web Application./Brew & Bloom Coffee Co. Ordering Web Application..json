@@ -504,20 +504,11 @@
         "placeholder": "New STRIDE diagram description",
         "thumbnail": "./public/content/images/thumbnail.stride.jpg",
         "version": "2.6.1-RC1",
-        "cells": []
-      },
-      {
-        "id": 2,
-        "title": "Manager Accesses Basic Sales Reports",
-        "diagramType": "STRIDE",
-        "placeholder": "New STRIDE diagram description",
-        "thumbnail": "./public/content/images/thumbnail.stride.jpg",
-        "version": "2.6.1-RC1",
         "cells": [
           {
             "position": {
               "x": 40,
-              "y": 140
+              "y": 120
             },
             "size": {
               "width": 112.5,
@@ -525,7 +516,7 @@
             },
             "attrs": {
               "text": {
-                "text": "Manager"
+                "text": "Barista"
               },
               "body": {
                 "stroke": "red",
@@ -602,26 +593,26 @@
               "items": [
                 {
                   "group": "top",
-                  "id": "a9c84086-df8d-4bc5-ba82-db361ca46094"
+                  "id": "de632ffd-a804-418a-b066-c7fe2d020b7c"
                 },
                 {
                   "group": "right",
-                  "id": "db1832e5-1716-4f12-912f-c75cbf038d41"
+                  "id": "b6dcfdae-9060-444b-9a7d-42793b3ef33e"
                 },
                 {
                   "group": "bottom",
-                  "id": "0b5c1c25-90bf-42c4-aba6-b050c9e1ea76"
+                  "id": "7325c018-287e-45e4-a97a-a66f3aac4b2c"
                 },
                 {
                   "group": "left",
-                  "id": "420a524f-2646-4c5d-884e-511db7810c5e"
+                  "id": "9d4630d9-7676-4159-b492-5df898675d2a"
                 }
               ]
             },
-            "id": "ddbcae1c-3d39-47ce-b456-fb51668aecbe",
+            "id": "0656ac5c-7e57-4b07-8e73-aa9cda58631b",
             "data": {
               "type": "tm.Actor",
-              "name": "Manager",
+              "name": "Barista",
               "description": "User interface built with HTML5/JS (React/Vue/Angular) for customers and staff.",
               "isTrustBoundary": false,
               "outOfScope": false,
@@ -630,7 +621,7 @@
               "providesAuthentication": false,
               "threats": [
                 {
-                  "id": "bb8f4317-9d6f-4d61-909e-fa0fa2fa0814",
+                  "id": "4dd5120a-2512-48fb-bf79-e37448509962",
                   "title": "Staff Account Spoofing",
                   "status": "Open",
                   "severity": "Medium",
@@ -643,7 +634,7 @@
                   "score": ""
                 },
                 {
-                  "id": "14606977-9680-4e97-8890-aabaabc15902",
+                  "id": "8346c256-e3cd-4547-b989-29038aecb430",
                   "title": "Web Application Server Spoofing",
                   "status": "Open",
                   "severity": "Medium",
@@ -664,8 +655,8 @@
           },
           {
             "position": {
-              "x": 425,
-              "y": 140
+              "x": 410,
+              "y": 120
             },
             "size": {
               "width": 60,
@@ -750,23 +741,23 @@
               "items": [
                 {
                   "group": "top",
-                  "id": "1fdbc4ec-39e7-4d7d-a894-4e2d50a96e59"
+                  "id": "43595dbe-ffb2-4518-abbc-42c52cc71685"
                 },
                 {
                   "group": "right",
-                  "id": "114c49f5-d47f-4811-b916-d89670229256"
+                  "id": "b2d9939e-a64d-4ee5-9971-48a21ae380d3"
                 },
                 {
                   "group": "bottom",
-                  "id": "0bfa3a0a-ba07-4f26-a9ce-1d8faf9e450d"
+                  "id": "1cdac2e4-91a0-4cd7-9986-47445bd7db7a"
                 },
                 {
                   "group": "left",
-                  "id": "aa3d9a49-fc34-41d6-b5db-fd540ebc7ba6"
+                  "id": "58f0df82-c73d-43ff-828c-9dbadb1881cc"
                 }
               ]
             },
-            "id": "12320c2c-75da-480a-b44a-22fb8136344a",
+            "id": "7fcfc36b-a098-4af1-876b-d4482f7d6309",
             "data": {
               "type": "tm.Process",
               "name": "Backend \nWeb App",
@@ -781,12 +772,12 @@
               "privilegeLevel": "High",
               "threats": [
                 {
-                  "id": "69193ebd-025d-43a3-a920-b133998e6614",
+                  "id": "d867d594-a572-4034-8c27-5d62ae41a7eb",
                   "title": "Staff Account Spoofing",
                   "status": "Open",
                   "severity": "Medium",
                   "type": "Spoofing",
-                  "description": "An attacker could impersonate staff to manipulate order statuses access sales reports, or modify menu items and application configurations.",
+                  "description": "An attacker could impersonate staff to manipulate order statuses, access sales reports, or modify menu items and application configurations.",
                   "mitigation": "Provide remediation for this threat or a reason if status is N/A",
                   "modelType": "STRIDE",
                   "new": false,
@@ -794,11 +785,11 @@
                   "score": ""
                 },
                 {
-                  "id": "24d0e303-bcc9-4801-ad9b-7541ab9baf12",
+                  "id": "07448213-7638-4314-9325-6f6f025260ea",
                   "title": "Web Application Server Spoofing",
                   "status": "Open",
                   "severity": "Medium",
-                  "type": "Tampering",
+                  "type": "Spoofing",
                   "description": "An attacker might set up a fraudulent web server to phish user credentials or intercept sensitive data.",
                   "mitigation": "Provide remediation for this threat or a reason if status is N/A",
                   "modelType": "STRIDE",
@@ -807,12 +798,12 @@
                   "score": ""
                 },
                 {
-                  "id": "2f5a2205-692f-4911-bcab-7eba1e6ccb6b",
-                  "title": "Sales Report Tampering",
+                  "id": "2210915f-cd31-4955-a774-7d583de74d10",
+                  "title": "Order Data Tampering",
                   "status": "Open",
                   "severity": "Medium",
                   "type": "Tampering",
-                  "description": "Unauthorized individuals could alter sales data in the MongoDB Database, leading to falsified reports.",
+                  "description": "An attacker could modify order details (e.g., items, quantities, prices, status) in transit or at rest.",
                   "mitigation": "Provide remediation for this threat or a reason if status is N/A",
                   "modelType": "STRIDE",
                   "new": false,
@@ -820,7 +811,7 @@
                   "score": ""
                 },
                 {
-                  "id": "ed27d182-0353-43c8-a9a0-ee1359357f3b",
+                  "id": "30f86bb3-eb62-40f9-bb74-6d671833538d",
                   "title": "Application Code/Configuration Tampering",
                   "status": "Open",
                   "severity": "Medium",
@@ -833,7 +824,20 @@
                   "score": ""
                 },
                 {
-                  "id": "a7065003-295e-4d6c-8497-f43686b3df01",
+                  "id": "c9fe30d5-a14b-41e7-8b95-927b72d2a145",
+                  "title": "Fraudulent Order Repudiation ",
+                  "status": "Open",
+                  "severity": "Medium",
+                  "type": "Repudiation",
+                  "description": "A customer could deny placing an order if insufficient logging and non-repudiation controls are in place.",
+                  "mitigation": "Provide remediation for this threat or a reason if status is N/A",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 7,
+                  "score": ""
+                },
+                {
+                  "id": "b895389e-42d6-48d4-aaf9-b811a619a434",
                   "title": "Staff Action Repudiation",
                   "status": "Open",
                   "severity": "Medium",
@@ -842,11 +846,11 @@
                   "mitigation": "Provide remediation for this threat or a reason if status is N/A",
                   "modelType": "STRIDE",
                   "new": false,
-                  "number": 7,
+                  "number": 8,
                   "score": ""
                 },
                 {
-                  "id": "726a8076-e04f-4f94-96ba-ac15a87bb43d",
+                  "id": "f558e62b-5603-4f5b-ae75-fe40ef4173d0",
                   "title": "Staff Credential Disclosure",
                   "status": "Open",
                   "severity": "High",
@@ -855,29 +859,16 @@
                   "mitigation": "Provide remediation for this threat or a reason if status is N/A",
                   "modelType": "STRIDE",
                   "new": false,
-                  "number": 8,
-                  "score": ""
-                },
-                {
-                  "id": "fd15610b-eb2f-46ca-b858-6834b1998bcf",
-                  "title": "Application Code and Configuration Disclosure",
-                  "status": "Open",
-                  "severity": "Medium",
-                  "type": "Information disclosure",
-                  "description": "Exposure of source code, server configurations, environment variables, or API keys.",
-                  "mitigation": "Provide remediation for this threat or a reason if status is N/A",
-                  "modelType": "STRIDE",
-                  "new": false,
                   "number": 9,
                   "score": ""
                 },
                 {
-                  "id": "9606be08-6985-473a-ace5-71e096c604e4",
-                  "title": "Sales Data Disclosure",
+                  "id": "1164b851-c10b-441e-8599-486b324999f6",
+                  "title": "Application Code and Configuration Disclosure",
                   "status": "Open",
                   "severity": "Medium",
                   "type": "Information disclosure",
-                  "description": "Unauthorized access to sales reports or underlying aggregated sales data.",
+                  "description": "Exposure of source code, server configurations, environment variables, or API keys. ",
                   "mitigation": "Provide remediation for this threat or a reason if status is N/A",
                   "modelType": "STRIDE",
                   "new": false,
@@ -885,12 +876,12 @@
                   "score": ""
                 },
                 {
-                  "id": "4838934a-8bdc-4f2c-a00c-a71d5cb6dc51",
+                  "id": "4c948b19-67f5-479d-95d7-fbd87ce4c217",
                   "title": "Web Application Server DoS",
                   "status": "Open",
                   "severity": "Medium",
                   "type": "Denial of service",
-                  "description": "An attacker could flood the Web Application Server with excessive\nrequests, making it unavailable. ",
+                  "description": "An attacker could flood the Web Application Server with excessive requests, making it unavailable. ",
                   "mitigation": "Provide remediation for this threat or a reason if status is N/A",
                   "modelType": "STRIDE",
                   "new": false,
@@ -898,7 +889,20 @@
                   "score": ""
                 },
                 {
-                  "id": "e128e507-3c4a-4401-a1d0-990a1789bbfe",
+                  "id": "b84cb888-506c-48f8-97e7-1637342439a7",
+                  "title": "MongoDB Database DoS",
+                  "status": "Open",
+                  "severity": "Low",
+                  "type": "Denial of service",
+                  "description": "Malicious or poorly optimized queries could overload the database, making it unresponsive.",
+                  "mitigation": "Provide remediation for this threat or a reason if status is N/A",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 12,
+                  "score": ""
+                },
+                {
+                  "id": "00698d25-b293-4c4b-a7f1-5215d73500e7",
                   "title": "Barista/Manager to Administrator Privilege Escalation",
                   "status": "Open",
                   "severity": "High",
@@ -907,37 +911,37 @@
                   "mitigation": "Provide remediation for this threat or a reason if status is N/A",
                   "modelType": "STRIDE",
                   "new": false,
-                  "number": 12,
+                  "number": 13,
                   "score": ""
                 },
                 {
-                  "id": "c518add8-c405-46d2-82b1-1f4bef8d8154",
-                  "title": "Horizontal Privilege Escalation ",
+                  "id": "b72aabe5-95e1-4d7e-ac97-5efd504224d2",
+                  "title": "Horizontal Privilege Escalation",
                   "status": "Open",
                   "severity": "Medium",
                   "type": "Elevation of privilege",
-                  "description": "Gaining unauthorized access to another user’s account within the same privilege level.",
+                  "description": "Gaining unauthorized access to another user’s account within the same\nprivilege level.",
                   "mitigation": "Provide remediation for this threat or a reason if status is N/A",
                   "modelType": "STRIDE",
                   "new": false,
-                  "number": 13,
+                  "number": 14,
                   "score": ""
                 }
               ],
               "threatFrequency": {
-                "spoofing": 1,
-                "tampering": 4,
-                "repudiation": 1,
+                "spoofing": 2,
+                "tampering": 2,
+                "repudiation": 2,
                 "informationDisclosure": 3,
-                "denialOfService": 1,
+                "denialOfService": 2,
                 "elevationOfPrivilege": 2
               }
             }
           },
           {
             "position": {
-              "x": 739,
-              "y": 140
+              "x": 755,
+              "y": 120
             },
             "size": {
               "width": 112.5,
@@ -1022,23 +1026,23 @@
               "items": [
                 {
                   "group": "top",
-                  "id": "a9c84086-df8d-4bc5-ba82-db361ca46094"
+                  "id": "de632ffd-a804-418a-b066-c7fe2d020b7c"
                 },
                 {
                   "group": "right",
-                  "id": "db1832e5-1716-4f12-912f-c75cbf038d41"
+                  "id": "b6dcfdae-9060-444b-9a7d-42793b3ef33e"
                 },
                 {
                   "group": "bottom",
-                  "id": "0b5c1c25-90bf-42c4-aba6-b050c9e1ea76"
+                  "id": "7325c018-287e-45e4-a97a-a66f3aac4b2c"
                 },
                 {
                   "group": "left",
-                  "id": "420a524f-2646-4c5d-884e-511db7810c5e"
+                  "id": "9d4630d9-7676-4159-b492-5df898675d2a"
                 }
               ]
             },
-            "id": "f6b827d7-5b42-443f-9847-b9bfaffee340",
+            "id": "073a5d05-f1b2-464d-8973-73839f04dc4f",
             "data": {
               "type": "tm.Actor",
               "name": "Third Party \nPayment Service",
@@ -1053,8 +1057,8 @@
           },
           {
             "position": {
-              "x": 395,
-              "y": 424
+              "x": 376.25,
+              "y": 400
             },
             "size": {
               "width": 120,
@@ -1144,23 +1148,23 @@
               "items": [
                 {
                   "group": "top",
-                  "id": "c7bee109-9f07-4020-b5aa-80b9a845e6aa"
+                  "id": "20c8d971-c4f2-4b66-9cea-07bb569f9584"
                 },
                 {
                   "group": "right",
-                  "id": "047cb5e1-a07d-4639-ad44-bc00763a7053"
+                  "id": "c0dacb10-1f31-45f2-8d51-8d86420b14f1"
                 },
                 {
                   "group": "bottom",
-                  "id": "84f323ca-6f75-4e3d-a003-0cc6f1d59ac8"
+                  "id": "656751b8-0de0-4659-89b8-7802acc40917"
                 },
                 {
                   "group": "left",
-                  "id": "1a93ed04-d943-4866-8b26-d5a534dcce46"
+                  "id": "575868a8-8452-463e-8ee1-15dcf9423c77"
                 }
               ]
             },
-            "id": "75d2c303-be84-448f-b213-9bf0b14bd007",
+            "id": "769c6be9-9afd-4911-989c-dfa9b6e18801",
             "data": {
               "type": "tm.Store",
               "name": "MongoDB",
@@ -1176,20 +1180,33 @@
               "storesInventory": true,
               "threats": [
                 {
-                  "id": "10c41369-8728-4759-881f-fe700179597c",
-                  "title": "Sales Report Tampering",
+                  "id": "f723dd12-9fa2-4af3-9458-8e47285df2fa",
+                  "title": "Order Data Tampering",
                   "status": "Open",
                   "severity": "Medium",
                   "type": "Tampering",
-                  "description": "Unauthorized individuals could alter sales data in the MongoDB Database, leading to falsified reports.",
+                  "description": "An attacker could modify order details (e.g., items, quantities, prices, status) in transit or at rest.",
                   "mitigation": "Provide remediation for this threat or a reason if status is N/A",
                   "modelType": "STRIDE",
                   "new": false,
-                  "number": 14,
+                  "number": 15,
                   "score": ""
                 },
                 {
-                  "id": "051db7a0-5b01-4bfc-a45c-2532e90cff73",
+                  "id": "ba493abc-863b-4753-9ab5-d44cc4150f3d",
+                  "title": "Fraudulent Order Repudiation ",
+                  "status": "Open",
+                  "severity": "Medium",
+                  "type": "Repudiation",
+                  "description": "A customer could deny placing an order if insufficient logging and non-repudiation controls are in place.",
+                  "mitigation": "Provide remediation for this threat or a reason if status is N/A",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 16,
+                  "score": ""
+                },
+                {
+                  "id": "0049a903-cb63-44d6-ae74-3aaaf54c0c1d",
                   "title": "Staff Action Repudiation",
                   "status": "Open",
                   "severity": "Medium",
@@ -1198,12 +1215,12 @@
                   "mitigation": "Provide remediation for this threat or a reason if status is N/A",
                   "modelType": "STRIDE",
                   "new": false,
-                  "number": 15,
+                  "number": 17,
                   "score": ""
                 },
                 {
-                  "id": "70c7f840-7ddf-4eff-8614-ea0e675e0020",
-                  "title": "Staff Credential Disclosure",
+                  "id": "749baa4d-b223-4f7e-8edd-f5bf07d89c30",
+                  "title": "Staff Credential Disclosure ",
                   "status": "Open",
                   "severity": "High",
                   "type": "Information disclosure",
@@ -1211,24 +1228,11 @@
                   "mitigation": "Provide remediation for this threat or a reason if status is N/A",
                   "modelType": "STRIDE",
                   "new": false,
-                  "number": 16,
+                  "number": 18,
                   "score": ""
                 },
                 {
-                  "id": "f0389a3c-fde4-45f0-8c69-9cddac3f41d5",
-                  "title": "Sales Data Disclosure",
-                  "status": "Open",
-                  "severity": "Medium",
-                  "type": "Information disclosure",
-                  "description": "Unauthorized access to sales reports or underlying aggregated sales data.",
-                  "mitigation": "Provide remediation for this threat or a reason if status is N/A",
-                  "modelType": "STRIDE",
-                  "new": false,
-                  "number": 17,
-                  "score": ""
-                },
-                {
-                  "id": "9f07fb42-1826-436b-8b87-00bf01dd62f7",
+                  "id": "fe0a8393-be24-442e-97b2-5ee13723ff65",
                   "title": "MongoDB Database DoS",
                   "status": "Open",
                   "severity": "Low",
@@ -1237,49 +1241,71 @@
                   "mitigation": "Provide remediation for this threat or a reason if status is N/A",
                   "modelType": "STRIDE",
                   "new": false,
-                  "number": 18,
+                  "number": 19,
                   "score": ""
                 }
               ],
               "threatFrequency": {
                 "tampering": 1,
-                "repudiation": 1,
-                "informationDisclosure": 2,
+                "repudiation": 2,
+                "informationDisclosure": 1,
                 "denialOfService": 1
               }
             }
           },
           {
-            "shape": "trust-boundary-curve",
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
             "width": 200,
             "height": 100,
             "zIndex": 10,
             "connector": "smooth",
             "data": {
-              "type": "tm.Boundary",
-              "name": "Client/ Server\nBoundary",
+              "type": "tm.Flow",
+              "name": "Displays Order List",
               "description": "",
-              "isTrustBoundary": true,
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
               "hasOpenThreats": false,
-              "crossingFlows": [],
-              "containedElements": []
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [],
+              "trustBoundaryIds": []
             },
             "labels": [
-              "Client/ Server\nBoundary"
+              "Displays Order List"
             ],
-            "id": "638d4b02-4763-4c12-88d1-eae631ca5f7e",
+            "id": "85847a1c-44f9-473f-9258-634a9d23331a",
             "source": {
-              "x": 320,
-              "y": 70
+              "cell": "7fcfc36b-a098-4af1-876b-d4482f7d6309",
+              "port": "58f0df82-c73d-43ff-828c-9dbadb1881cc"
             },
             "target": {
-              "x": 320,
-              "y": 510
+              "cell": "0656ac5c-7e57-4b07-8e73-aa9cda58631b",
+              "port": "de632ffd-a804-418a-b066-c7fe2d020b7c"
             },
             "vertices": [
               {
-                "x": 290,
-                "y": 260
+                "x": 280,
+                "y": 100
+              },
+              {
+                "x": 190,
+                "y": 100
               }
             ]
           },
@@ -1303,7 +1329,7 @@
             "connector": "smooth",
             "data": {
               "type": "tm.Flow",
-              "name": "Login Request & View Sales Reports",
+              "name": "Updated Order Status",
               "description": "",
               "outOfScope": false,
               "isTrustBoundary": false,
@@ -1317,21 +1343,21 @@
               "trustBoundaryIds": []
             },
             "labels": [
-              "Login Request & View Sales Reports"
+              "Updated Order Status"
             ],
-            "id": "56d61440-5a10-4ede-8831-bf663bf74c9b",
+            "id": "8e1e4aa4-2a66-47c2-8cd6-86afc30bc2f5",
             "source": {
-              "cell": "ddbcae1c-3d39-47ce-b456-fb51668aecbe",
-              "port": "db1832e5-1716-4f12-912f-c75cbf038d41"
+              "cell": "0656ac5c-7e57-4b07-8e73-aa9cda58631b",
+              "port": "b6dcfdae-9060-444b-9a7d-42793b3ef33e"
             },
             "target": {
-              "cell": "12320c2c-75da-480a-b44a-22fb8136344a",
-              "port": "aa3d9a49-fc34-41d6-b5db-fd540ebc7ba6"
+              "cell": "7fcfc36b-a098-4af1-876b-d4482f7d6309",
+              "port": "58f0df82-c73d-43ff-828c-9dbadb1881cc"
             },
             "vertices": [
               {
-                "x": 290,
-                "y": 130
+                "x": 270,
+                "y": 170
               }
             ]
           },
@@ -1355,7 +1381,7 @@
             "connector": "smooth",
             "data": {
               "type": "tm.Flow",
-              "name": "Query Aggregated\n Sales Data",
+              "name": "Queries Pending \nOrder Data",
               "description": "",
               "outOfScope": false,
               "isTrustBoundary": false,
@@ -1369,21 +1395,29 @@
               "trustBoundaryIds": []
             },
             "labels": [
-              "Query Aggregated\n Sales Data"
+              "Queries Pending \nOrder Data"
             ],
-            "id": "f2e82603-d3d3-42c3-b615-98834cb562d5",
+            "id": "8a73715a-5031-49eb-9cc7-842d1c60d165",
             "source": {
-              "cell": "12320c2c-75da-480a-b44a-22fb8136344a",
-              "port": "0bfa3a0a-ba07-4f26-a9ce-1d8faf9e450d"
+              "cell": "7fcfc36b-a098-4af1-876b-d4482f7d6309",
+              "port": "b2d9939e-a64d-4ee5-9971-48a21ae380d3"
             },
             "target": {
-              "cell": "75d2c303-be84-448f-b213-9bf0b14bd007",
-              "port": "c7bee109-9f07-4020-b5aa-80b9a845e6aa"
+              "cell": "769c6be9-9afd-4911-989c-dfa9b6e18801",
+              "port": "20c8d971-c4f2-4b66-9cea-07bb569f9584"
             },
             "vertices": [
               {
-                "x": 510,
-                "y": 300
+                "x": 560,
+                "y": 180
+              },
+              {
+                "x": 580,
+                "y": 230
+              },
+              {
+                "x": 530,
+                "y": 320
               }
             ]
           },
@@ -1407,7 +1441,7 @@
             "connector": "smooth",
             "data": {
               "type": "tm.Flow",
-              "name": "Aggregated \nSales Data",
+              "name": "Sends Order \nData",
               "description": "",
               "outOfScope": false,
               "isTrustBoundary": false,
@@ -1421,54 +1455,20 @@
               "trustBoundaryIds": []
             },
             "labels": [
-              "Aggregated \nSales Data"
+              "Sends Order \nData"
             ],
-            "id": "49a3f04e-bb35-4435-aba8-8a22107090c7",
+            "id": "42cfe7cc-20aa-48f5-b5fb-a8db18e1a7fa",
             "source": {
-              "cell": "75d2c303-be84-448f-b213-9bf0b14bd007",
-              "port": "c7bee109-9f07-4020-b5aa-80b9a845e6aa"
+              "cell": "769c6be9-9afd-4911-989c-dfa9b6e18801",
+              "port": "20c8d971-c4f2-4b66-9cea-07bb569f9584"
             },
             "target": {
-              "cell": "12320c2c-75da-480a-b44a-22fb8136344a",
-              "port": "0bfa3a0a-ba07-4f26-a9ce-1d8faf9e450d"
+              "cell": "7fcfc36b-a098-4af1-876b-d4482f7d6309",
+              "port": "b2d9939e-a64d-4ee5-9971-48a21ae380d3"
             },
             "vertices": [
               {
-                "x": 380,
-                "y": 300
-              }
-            ]
-          },
-          {
-            "shape": "trust-boundary-curve",
-            "width": 200,
-            "height": 100,
-            "zIndex": 10,
-            "connector": "smooth",
-            "data": {
-              "type": "tm.Boundary",
-              "name": "Server/ Payment\nBoundary",
-              "description": "",
-              "isTrustBoundary": true,
-              "hasOpenThreats": false,
-              "crossingFlows": [],
-              "containedElements": []
-            },
-            "labels": [
-              "Server/ Payment\nBoundary"
-            ],
-            "id": "6ac73b2f-55ec-4e99-b4e8-ef4a3a19b161",
-            "source": {
-              "x": 640,
-              "y": 70
-            },
-            "target": {
-              "x": 660,
-              "y": 510
-            },
-            "vertices": [
-              {
-                "x": 620,
+                "x": 470,
                 "y": 270
               }
             ]
@@ -1493,7 +1493,7 @@
             "connector": "smooth",
             "data": {
               "type": "tm.Flow",
-              "name": "Processes & Sends Formatted Report",
+              "name": "Updates Order \nRecord",
               "description": "",
               "outOfScope": false,
               "isTrustBoundary": false,
@@ -1507,21 +1507,21 @@
               "trustBoundaryIds": []
             },
             "labels": [
-              "Processes & Sends Formatted Report"
+              "Updates Order \nRecord"
             ],
-            "id": "31abd12c-43e0-4a2f-8c2b-0f94db51ed6a",
+            "id": "4da7c512-1c39-4cb3-90f1-2e67ca664242",
             "source": {
-              "cell": "12320c2c-75da-480a-b44a-22fb8136344a",
-              "port": "aa3d9a49-fc34-41d6-b5db-fd540ebc7ba6"
+              "cell": "7fcfc36b-a098-4af1-876b-d4482f7d6309",
+              "port": "1cdac2e4-91a0-4cd7-9986-47445bd7db7a"
             },
             "target": {
-              "cell": "ddbcae1c-3d39-47ce-b456-fb51668aecbe",
-              "port": "db1832e5-1716-4f12-912f-c75cbf038d41"
+              "cell": "769c6be9-9afd-4911-989c-dfa9b6e18801",
+              "port": "20c8d971-c4f2-4b66-9cea-07bb569f9584"
             },
             "vertices": [
               {
-                "x": 300,
-                "y": 220
+                "x": 360,
+                "y": 230
               }
             ]
           },
@@ -1529,11 +1529,11 @@
             "shape": "trust-boundary-curve",
             "width": 200,
             "height": 100,
-            "zIndex": 10,
+            "zIndex": 14,
             "connector": "smooth",
             "data": {
               "type": "tm.Boundary",
-              "name": "Server/ DB Boundary",
+              "name": "Server/ Payment\nBoundary",
               "description": "",
               "isTrustBoundary": true,
               "hasOpenThreats": false,
@@ -1541,25 +1541,174 @@
               "containedElements": []
             },
             "labels": [
-              "Server/ DB Boundary"
+              "Server/ Payment\nBoundary"
             ],
-            "id": "59a67bce-f900-402d-a837-49bc49de4703",
+            "id": "179f486d-3b25-4ca4-a231-f0c4312750cf",
             "source": {
-              "x": 100,
-              "y": 390
+              "x": 710,
+              "y": 50
             },
             "target": {
-              "x": 810,
-              "y": 390
+              "x": 710,
+              "y": 500
             },
             "vertices": [
               {
+                "x": 670,
+                "y": 280
+              },
+              {
+                "x": 690,
+                "y": 440
+              }
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 15,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Login Request & View Incoming Orders",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [],
+              "trustBoundaryIds": []
+            },
+            "labels": [
+              "Login Request & View Incoming Orders"
+            ],
+            "id": "9e610754-b500-483e-8acc-2751fe5f299a",
+            "source": {
+              "cell": "0656ac5c-7e57-4b07-8e73-aa9cda58631b",
+              "port": "de632ffd-a804-418a-b066-c7fe2d020b7c"
+            },
+            "target": {
+              "cell": "7fcfc36b-a098-4af1-876b-d4482f7d6309",
+              "port": "43595dbe-ffb2-4518-abbc-42c52cc71685"
+            },
+            "vertices": [
+              {
+                "x": 130,
+                "y": 80
+              },
+              {
+                "x": 220,
+                "y": 60
+              },
+              {
+                "x": 260,
+                "y": 60
+              },
+              {
+                "x": 340,
+                "y": 80
+              }
+            ]
+          },
+          {
+            "shape": "trust-boundary-curve",
+            "width": 200,
+            "height": 100,
+            "zIndex": 16,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Boundary",
+              "name": "Server/DB Boundary",
+              "description": "",
+              "isTrustBoundary": true,
+              "hasOpenThreats": false,
+              "crossingFlows": [],
+              "containedElements": []
+            },
+            "labels": [
+              "Server/DB Boundary"
+            ],
+            "id": "2082c928-325f-4250-aadd-643e7c0d4542",
+            "source": {
+              "x": 40,
+              "y": 390
+            },
+            "target": {
+              "x": 860,
+              "y": 380
+            },
+            "vertices": [
+              {
+                "x": 160,
+                "y": 360
+              },
+              {
                 "x": 430,
-                "y": 370
+                "y": 330
+              }
+            ]
+          },
+          {
+            "shape": "trust-boundary-curve",
+            "width": 200,
+            "height": 100,
+            "zIndex": 17,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Boundary",
+              "name": "Client/ Server\n Boundary",
+              "description": "",
+              "isTrustBoundary": true,
+              "hasOpenThreats": false,
+              "crossingFlows": [],
+              "containedElements": []
+            },
+            "labels": [
+              "Client/ Server\n Boundary"
+            ],
+            "id": "aa2cccad-a03c-408d-84d9-3229356ce479",
+            "source": {
+              "x": 260,
+              "y": 30
+            },
+            "target": {
+              "x": 260,
+              "y": 510
+            },
+            "vertices": [
+              {
+                "x": 220,
+                "y": 280
               }
             ]
           }
         ]
+      },
+      {
+        "id": 2,
+        "title": "Manager Accesses Basic Sales Reports",
+        "diagramType": "STRIDE",
+        "placeholder": "New STRIDE diagram description",
+        "thumbnail": "./public/content/images/thumbnail.stride.jpg",
+        "version": "2.6.1-RC1",
+        "cells": []
       },
       {
         "id": 3,
@@ -1573,6 +1722,6 @@
     ],
     "diagramTop": 4,
     "reviewer": "",
-    "threatTop": 18
+    "threatTop": 19
   }
 }
